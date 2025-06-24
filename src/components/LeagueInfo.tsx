@@ -1,8 +1,13 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Clock, Users, Trophy, Calendar } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Clock, Users, Trophy, Calendar, DollarSign } from "lucide-react";
 
 const LeagueInfo = () => {
+  const handleTeamRegistration = (day: string) => {
+    alert(`Team registration for ${day} nights: $800 per team. Contact Aaron Berger at 240-620-7492 or A5SoccerMaryland@gmail.com for registration details.`);
+  };
+
   return (
     <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
@@ -13,62 +18,96 @@ const LeagueInfo = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-          <Card className="text-center hover:shadow-lg transition-shadow duration-300">
-            <CardHeader>
-              <Calendar className="w-12 h-12 text-green-600 mx-auto mb-4" />
-              <CardTitle className="text-green-700">Season Dates</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-gray-600">
-                <strong>Start:</strong> July 10th<br />
-                <strong>Duration:</strong> 8 weeks<br />
-                <strong>Day:</strong> Thursday nights
-              </p>
-            </CardContent>
-          </Card>
+        {/* Current Season - Thursday Nights */}
+        <div className="mb-12">
+          <h3 className="text-2xl font-bold text-center text-green-700 mb-8">Current Season - Thursday Nights</h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+            <Card className="text-center hover:shadow-lg transition-shadow duration-300">
+              <CardHeader>
+                <Calendar className="w-12 h-12 text-green-600 mx-auto mb-4" />
+                <CardTitle className="text-green-700">Season Dates</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600">
+                  <strong>Start:</strong> July 10th<br />
+                  <strong>Duration:</strong> 8 weeks<br />
+                  <strong>Day:</strong> Thursday nights
+                </p>
+              </CardContent>
+            </Card>
+            
+            <Card className="text-center hover:shadow-lg transition-shadow duration-300">
+              <CardHeader>
+                <Users className="w-12 h-12 text-green-600 mx-auto mb-4" />
+                <CardTitle className="text-green-700">Format</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600">
+                  <strong>Type:</strong> Coed<br />
+                  <strong>Size:</strong> 11v11<br />
+                  <strong>Age:</strong> Adults only
+                </p>
+              </CardContent>
+            </Card>
+            
+            <Card className="text-center hover:shadow-lg transition-shadow duration-300">
+              <CardHeader>
+                <Clock className="w-12 h-12 text-green-600 mx-auto mb-4" />
+                <CardTitle className="text-green-700">Location</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600">
+                  <strong>Area:</strong> Montgomery County<br />
+                  <strong>State:</strong> Maryland<br />
+                  <strong>Night:</strong> Thursday
+                </p>
+              </CardContent>
+            </Card>
+            
+            <Card className="text-center hover:shadow-lg transition-shadow duration-300">
+              <CardHeader>
+                <Trophy className="w-12 h-12 text-green-600 mx-auto mb-4" />
+                <CardTitle className="text-green-700">Competition</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600">
+                  <strong>Level:</strong> All skill levels<br />
+                  <strong>Teams:</strong> Competitive<br />
+                  <strong>Fun:</strong> Guaranteed!
+                </p>
+              </CardContent>
+            </Card>
+          </div>
           
-          <Card className="text-center hover:shadow-lg transition-shadow duration-300">
-            <CardHeader>
-              <Users className="w-12 h-12 text-green-600 mx-auto mb-4" />
-              <CardTitle className="text-green-700">Format</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-gray-600">
-                <strong>Type:</strong> Coed<br />
-                <strong>Size:</strong> 11v11<br />
-                <strong>Age:</strong> Adults only
-              </p>
-            </CardContent>
-          </Card>
-          
-          <Card className="text-center hover:shadow-lg transition-shadow duration-300">
-            <CardHeader>
-              <Clock className="w-12 h-12 text-green-600 mx-auto mb-4" />
-              <CardTitle className="text-green-700">Timing</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-gray-600">
-                <strong>Games:</strong> Thursday nights<br />
-                <strong>Location:</strong> Montgomery County<br />
-                <strong>Maryland</strong>
-              </p>
-            </CardContent>
-          </Card>
-          
-          <Card className="text-center hover:shadow-lg transition-shadow duration-300">
-            <CardHeader>
-              <Trophy className="w-12 h-12 text-green-600 mx-auto mb-4" />
-              <CardTitle className="text-green-700">Competition</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-gray-600">
-                <strong>Level:</strong> All skill levels<br />
-                <strong>Teams:</strong> Competitive<br />
-                <strong>Fun:</strong> Guaranteed!
-              </p>
-            </CardContent>
-          </Card>
+          {/* Team Registration for Thursday */}
+          <div className="mt-8 text-center">
+            <Card className="max-w-md mx-auto">
+              <CardHeader>
+                <DollarSign className="w-12 h-12 text-green-600 mx-auto mb-4" />
+                <CardTitle className="text-green-700">Team Registration</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 mb-4">
+                  Register your complete team for Thursday night games
+                </p>
+                <p className="text-2xl font-bold text-green-700 mb-4">$800 per team</p>
+                <Button 
+                  onClick={() => handleTeamRegistration('Thursday')}
+                  className="bg-green-600 hover:bg-green-700"
+                >
+                  Register Team for Thursday
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+        
+        {/* Future Expansion Notice */}
+        <div className="text-center bg-green-100 p-6 rounded-lg max-w-2xl mx-auto">
+          <h4 className="text-lg font-semibold text-green-800 mb-2">Coming Soon!</h4>
+          <p className="text-green-700">
+            We're planning to expand to additional nights of the week. Stay tuned for more options!
+          </p>
         </div>
       </div>
     </section>

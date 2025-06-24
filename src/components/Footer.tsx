@@ -10,10 +10,15 @@ const Footer = () => {
           </p>
           
           <div className="border-t border-green-700 pt-6">
-            <p className="text-green-300 mb-2">
-              <strong>Contact Us:</strong> For questions about registration, schedule, or league information
+            <p className="text-green-300 mb-4">
+              <strong>Contact Information:</strong>
             </p>
-            <p className="text-green-200 text-sm">
+            <div className="space-y-2 text-green-200">
+              <p><strong>Aaron Berger</strong> - League Director</p>
+              <p>Phone: <a href="tel:240-620-7492" className="text-green-300 hover:text-white transition-colors">240-620-7492</a></p>
+              <p>Email: <a href="mailto:A5SoccerMaryland@gmail.com" className="text-green-300 hover:text-white transition-colors">A5SoccerMaryland@gmail.com</a></p>
+            </div>
+            <p className="text-green-200 text-sm mt-6">
               © 2024 A5Soccer. All rights reserved. | Montgomery County, Maryland
             </p>
           </div>
