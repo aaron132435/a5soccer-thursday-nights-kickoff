@@ -1,11 +1,11 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Clock, Users, Trophy, Calendar, DollarSign } from "lucide-react";
+import { Clock, Users, Trophy, Calendar } from "lucide-react";
 
 const LeagueInfo = () => {
   const handleTeamRegistration = (day: string) => {
-    alert(`Team registration for ${day} nights: $800 per team. Contact Aaron Berger at 240-620-7492 or A5SoccerMaryland@gmail.com for registration details.`);
+    alert(`Team registration for ${day} nights: $800 per team.\n\nTo register, please email Aaron Berger at A5SoccerMaryland@gmail.com with the following information:\n• Team name\n• Team color\n• Captain's name\n• Captain's phone number\n\nYou can also call 240-620-7492 for registration assistance.`);
   };
 
   return (
@@ -83,14 +83,12 @@ const LeagueInfo = () => {
           <div className="mt-8 text-center">
             <Card className="max-w-md mx-auto">
               <CardHeader>
-                <DollarSign className="w-12 h-12 text-green-600 mx-auto mb-4" />
                 <CardTitle className="text-green-700">Team Registration</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 mb-4">
                   Register your complete team for Thursday night games
                 </p>
-                <p className="text-2xl font-bold text-green-700 mb-4">$800 per team</p>
                 <Button 
                   onClick={() => handleTeamRegistration('Thursday')}
                   className="bg-green-600 hover:bg-green-700"
