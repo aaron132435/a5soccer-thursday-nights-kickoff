@@ -34,14 +34,14 @@ const Hero = () => {
             
             <div className="flex flex-col items-center p-6 bg-white/10 rounded-lg backdrop-blur-sm">
               <Calendar className="w-12 h-12 mb-4 text-green-300" />
-              <h3 className="text-lg font-semibold mb-2">8 Week Season</h3>
+              <h3 className="text-lg font-semibold mb-2">8 Game Season</h3>
               <p className="text-green-100 text-center">Starting July 10th, Thursday nights</p>
             </div>
             
             <div className="flex flex-col items-center p-6 bg-white/10 rounded-lg backdrop-blur-sm">
               <MapPin className="w-12 h-12 mb-4 text-green-300" />
-              <h3 className="text-lg font-semibold mb-2">Montgomery County</h3>
-              <p className="text-green-100 text-center">Maryland locations</p>
+              <h3 className="text-lg font-semibold mb-2">Ridge Road Park</h3>
+              <p className="text-green-100 text-center">Germantown, Maryland</p>
             </div>
           </div>
           
