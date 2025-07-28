@@ -51,8 +51,7 @@ const FreeAgent = () => {
                 size="lg" 
                 className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 text-lg font-semibold transition-all duration-300"
                 onClick={() => {
-                  // This will be updated with the actual Google Form link
-                  alert('Google Form link coming soon! Please check back or contact us directly to register.');
+                  window.open('https://docs.google.com/forms/d/e/1FAIpQLSccJXrx0XDO28qoVOyCaisRL8v8fs3nupnYteIbKjDtHTjqnw/viewform?usp=dialog', '_blank');
                 }}
               >
                 <ExternalLink className="w-5 h-5 mr-2" />
@@ -60,7 +59,7 @@ const FreeAgent = () => {
               </Button>
               
               <p className="text-sm text-gray-500">
-                Registration form will open soon. Contact us for early registration.
+                Click the button above to access the registration form.
               </p>
             </CardContent>
           </Card>
