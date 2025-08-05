@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Users, Calendar, MapPin } from "lucide-react";
 
 const Hero = () => {
+  console.log("Hero component loaded - September 18th version");
   return (
     <section className="relative min-h-screen bg-gradient-to-br from-green-600 via-green-700 to-green-800 text-white overflow-hidden">
       {/* Background Pattern */}
