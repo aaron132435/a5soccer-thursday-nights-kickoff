@@ -50,9 +50,7 @@ const FreeAgent = () => {
               <Button 
                 size="lg" 
                 className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 text-lg font-semibold transition-all duration-300"
-                onClick={() => {
-                  window.open('https://docs.google.com/forms/d/e/1FAIpQLSccJXrx0XDO28qoVOyCaisRL8v8fs3nupnYteIbKjDtHTjqnw/viewform?usp=dialog', '_blank');
-                }}
+                onClick={() => window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSccJXrx0XDO28qoVOyCaisRL8v8fs3nupnYteIbKjDtHTjqnw/viewform?usp=dialog"}
               >
                 <ExternalLink className="w-5 h-5 mr-2" />
                 Register Now
