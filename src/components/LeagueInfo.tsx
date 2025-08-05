@@ -29,7 +29,7 @@ const LeagueInfo = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  <strong>Start:</strong> July 10th<br />
+                  <strong>Start:</strong> September 18th<br />
                   <strong>Duration:</strong> 8 weeks<br />
                   <strong>Day:</strong> Thursday nights
                 </p>
