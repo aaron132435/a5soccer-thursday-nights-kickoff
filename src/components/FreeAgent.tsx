@@ -51,7 +51,7 @@ const FreeAgent = () => {
                 size="lg" 
                 className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 text-lg font-semibold transition-all duration-300"
                 onClick={() => {
-                  window.open("https://www.google.com", "_blank");
+                  window.open("https://docs.google.com/forms/d/1pmXqqHAVtHlj0gVXJduAsdMVwTYC6oQddeBTCkWEr5Q/edit", "_blank");
                 }}
               >
                 <ExternalLink className="w-5 h-5 mr-2" />
