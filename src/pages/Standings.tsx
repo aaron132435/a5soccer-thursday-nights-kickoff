@@ -60,18 +60,18 @@ const Standings = () => {
                 </CardHeader>
                 <CardContent>
                   <Table>
-                     <TableHeader>
+                      <TableHeader>
                        <TableRow>
                          <TableHead className="w-16">Pos</TableHead>
                          <TableHead>Team</TableHead>
-                         <TableHead className="text-center">P</TableHead>
+                         <TableHead className="text-center font-semibold">Pts</TableHead>
                          <TableHead className="text-center">W</TableHead>
                          <TableHead className="text-center">D</TableHead>
                          <TableHead className="text-center">L</TableHead>
                          <TableHead className="text-center">PS</TableHead>
                          <TableHead className="text-center">PSA</TableHead>
                          <TableHead className="text-center">PSD</TableHead>
-                         <TableHead className="text-center font-semibold">Pts</TableHead>
+                         <TableHead className="text-center">GP</TableHead>
                        </TableRow>
                      </TableHeader>
                      <TableBody>
@@ -79,14 +79,14 @@ const Standings = () => {
                          <TableRow key={team.position} className={team.position <= 4 ? "bg-green-50" : ""}>
                            <TableCell className="font-medium text-center">{team.position}</TableCell>
                            <TableCell className="font-semibold">{team.team}</TableCell>
-                           <TableCell className="text-center">{team.played}</TableCell>
+                           <TableCell className="text-center font-bold">{team.points}</TableCell>
                            <TableCell className="text-center">{team.wins}</TableCell>
                            <TableCell className="text-center">{team.draws}</TableCell>
                            <TableCell className="text-center">{team.losses}</TableCell>
                            <TableCell className="text-center">{team.ps}</TableCell>
                            <TableCell className="text-center">{team.psa}</TableCell>
                            <TableCell className="text-center">{team.psd}</TableCell>
-                           <TableCell className="text-center font-bold">{team.points}</TableCell>
+                           <TableCell className="text-center">{team.played}</TableCell>
                          </TableRow>
                        ))}
                      </TableBody>
@@ -148,7 +148,7 @@ const Standings = () => {
                   <CardTitle className="text-green-700 text-sm">Legend</CardTitle>
                 </CardHeader>
                  <CardContent className="text-sm space-y-1">
-                   <p><strong>P</strong> - Games Played</p>
+                   <p><strong>GP</strong> - Games Played</p>
                    <p><strong>W</strong> - Wins</p>
                    <p><strong>D</strong> - Draws</p>
                    <p><strong>L</strong> - Losses</p>
