@@ -82,8 +82,7 @@ const Seasons = () => {
                   size="lg" 
                   className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3"
                   onClick={() => {
-                    // Replace with actual Google Form URL
-                    window.open('https://forms.google.com/tuesday-mens-fall', '_blank');
+                    window.open('https://docs.google.com/forms/d/e/1FAIpQLSczmKlQKJB_NNkExrBExBnPu2f7kpkvejeoAmEZmoTm2c254A/viewform?usp=dialog', '_blank');
                   }}
                 >
                   <ExternalLink className="w-4 h-4 mr-2" />
@@ -112,8 +111,7 @@ const Seasons = () => {
                   size="lg" 
                   className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3"
                   onClick={() => {
-                    // Replace with actual Google Form URL
-                    window.open('https://forms.google.com/thursday-coed-fall', '_blank');
+                    window.open('https://docs.google.com/forms/d/e/1FAIpQLSczmKlQKJB_NNkExrBExBnPu2f7kpkvejeoAmEZmoTm2c254A/viewform?usp=dialog', '_blank');
                   }}
                 >
                   <ExternalLink className="w-4 h-4 mr-2" />
