@@ -5,16 +5,16 @@ import { Download, ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Standings = () => {
-  // Sample standings data - replace with actual data
+  // Current standings data
   const standings = [
-    { position: 1, team: "Thunder FC", played: 6, wins: 5, draws: 1, losses: 0, points: 16 },
-    { position: 2, team: "Lightning United", played: 6, wins: 4, draws: 1, losses: 1, points: 13 },
-    { position: 3, team: "Storm Chasers", played: 6, wins: 3, draws: 2, losses: 1, points: 11 },
-    { position: 4, team: "Dynamo FC", played: 6, wins: 3, draws: 1, losses: 2, points: 10 },
-    { position: 5, team: "Rapids United", played: 6, wins: 2, draws: 2, losses: 2, points: 8 },
-    { position: 6, team: "Velocity FC", played: 6, wins: 2, draws: 1, losses: 3, points: 7 },
-    { position: 7, team: "Fusion United", played: 6, wins: 1, draws: 2, losses: 3, points: 5 },
-    { position: 8, team: "Phoenix FC", played: 6, wins: 0, draws: 1, losses: 5, points: 1 },
+    { position: 1, team: "Blue Lock", points: 12, wins: 4, losses: 1, draws: 0, ps: 14, psa: 9, psd: 5, played: 5 },
+    { position: 2, team: "Cesena FC", points: 10, wins: 3, losses: 1, draws: 1, ps: 16, psa: 8, psd: 8, played: 5 },
+    { position: 3, team: "Peeps FC", points: 9, wins: 3, losses: 2, draws: 0, ps: 10, psa: 10, psd: 0, played: 5 },
+    { position: 4, team: "The Paulers", points: 9, wins: 3, losses: 2, draws: 0, ps: 11, psa: 9, psd: 2, played: 5 },
+    { position: 5, team: "Under Construction United", points: 3, wins: 1, losses: 2, draws: 0, ps: 8, psa: 8, psd: 0, played: 3 },
+    { position: 6, team: "A Good Team Name", points: 4, wins: 1, losses: 3, draws: 1, ps: 4, psa: 10, psd: -6, played: 5 },
+    { position: 7, team: "Orange Crush", points: 4, wins: 1, losses: 3, draws: 1, ps: 9, psa: 14, psd: -5, played: 5 },
+    { position: 8, team: "Karma FC", points: 1, wins: 0, losses: 2, draws: 1, ps: 4, psa: 8, psd: -4, played: 3 },
   ];
 
   const handleDownloadSchedule = () => {
@@ -56,30 +56,36 @@ const Standings = () => {
                 </CardHeader>
                 <CardContent>
                   <Table>
-                    <TableHeader>
-                      <TableRow>
-                        <TableHead className="w-16">Pos</TableHead>
-                        <TableHead>Team</TableHead>
-                        <TableHead className="text-center">P</TableHead>
-                        <TableHead className="text-center">W</TableHead>
-                        <TableHead className="text-center">D</TableHead>
-                        <TableHead className="text-center">L</TableHead>
-                        <TableHead className="text-center font-semibold">Pts</TableHead>
-                      </TableRow>
-                    </TableHeader>
-                    <TableBody>
-                      {standings.map((team) => (
-                        <TableRow key={team.position} className={team.position <= 3 ? "bg-green-50" : ""}>
-                          <TableCell className="font-medium text-center">{team.position}</TableCell>
-                          <TableCell className="font-semibold">{team.team}</TableCell>
-                          <TableCell className="text-center">{team.played}</TableCell>
-                          <TableCell className="text-center">{team.wins}</TableCell>
-                          <TableCell className="text-center">{team.draws}</TableCell>
-                          <TableCell className="text-center">{team.losses}</TableCell>
-                          <TableCell className="text-center font-bold">{team.points}</TableCell>
-                        </TableRow>
-                      ))}
-                    </TableBody>
+                     <TableHeader>
+                       <TableRow>
+                         <TableHead className="w-16">Pos</TableHead>
+                         <TableHead>Team</TableHead>
+                         <TableHead className="text-center">P</TableHead>
+                         <TableHead className="text-center">W</TableHead>
+                         <TableHead className="text-center">D</TableHead>
+                         <TableHead className="text-center">L</TableHead>
+                         <TableHead className="text-center">PS</TableHead>
+                         <TableHead className="text-center">PSA</TableHead>
+                         <TableHead className="text-center">PSD</TableHead>
+                         <TableHead className="text-center font-semibold">Pts</TableHead>
+                       </TableRow>
+                     </TableHeader>
+                     <TableBody>
+                       {standings.map((team) => (
+                         <TableRow key={team.position} className={team.position <= 4 ? "bg-green-50" : ""}>
+                           <TableCell className="font-medium text-center">{team.position}</TableCell>
+                           <TableCell className="font-semibold">{team.team}</TableCell>
+                           <TableCell className="text-center">{team.played}</TableCell>
+                           <TableCell className="text-center">{team.wins}</TableCell>
+                           <TableCell className="text-center">{team.draws}</TableCell>
+                           <TableCell className="text-center">{team.losses}</TableCell>
+                           <TableCell className="text-center">{team.ps}</TableCell>
+                           <TableCell className="text-center">{team.psa}</TableCell>
+                           <TableCell className="text-center">{team.psd}</TableCell>
+                           <TableCell className="text-center font-bold">{team.points}</TableCell>
+                         </TableRow>
+                       ))}
+                     </TableBody>
                   </Table>
                 </CardContent>
               </Card>
@@ -137,16 +143,19 @@ const Standings = () => {
                 <CardHeader>
                   <CardTitle className="text-green-700 text-sm">Legend</CardTitle>
                 </CardHeader>
-                <CardContent className="text-sm space-y-1">
-                  <p><strong>P</strong> - Games Played</p>
-                  <p><strong>W</strong> - Wins</p>
-                  <p><strong>D</strong> - Draws</p>
-                  <p><strong>L</strong> - Losses</p>
-                  <p><strong>Pts</strong> - Points (3 for win, 1 for draw)</p>
-                  <div className="mt-3 p-2 bg-green-50 rounded">
-                    <p className="text-green-700"><strong>Top 3 teams</strong> highlighted in green</p>
-                  </div>
-                </CardContent>
+                 <CardContent className="text-sm space-y-1">
+                   <p><strong>P</strong> - Games Played</p>
+                   <p><strong>W</strong> - Wins</p>
+                   <p><strong>D</strong> - Draws</p>
+                   <p><strong>L</strong> - Losses</p>
+                   <p><strong>PS</strong> - Points Scored</p>
+                   <p><strong>PSA</strong> - Points Scored Against</p>
+                   <p><strong>PSD</strong> - Point Differential</p>
+                   <p><strong>Pts</strong> - Points (3 for win, 1 for draw)</p>
+                   <div className="mt-3 p-2 bg-green-50 rounded">
+                     <p className="text-green-700"><strong>Top 4 teams</strong> highlighted in green</p>
+                   </div>
+                 </CardContent>
               </Card>
             </div>
           </div>
