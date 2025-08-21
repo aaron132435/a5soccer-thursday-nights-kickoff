@@ -39,8 +39,12 @@ const Schedule = () => {
                 size="lg" 
                 className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 text-lg font-semibold transition-all duration-300"
                 onClick={() => {
-                  // This will be updated when the PDF is uploaded
-                  alert('Schedule PDF will be available soon! Please check back or contact us for updates.');
+                  const link = document.createElement('a');
+                  link.href = '/schedule.pdf';
+                  link.download = 'Thursday-Coed-Schedule.pdf';
+                  document.body.appendChild(link);
+                  link.click();
+                  document.body.removeChild(link);
                 }}
               >
                 <Download className="w-5 h-5 mr-2" />
@@ -48,7 +52,7 @@ const Schedule = () => {
               </Button>
               
               <p className="text-sm text-gray-500">
-                Schedule will be available closer to the season start date
+                Click to download the complete Thursday Coed schedule
               </p>
             </CardContent>
           </Card>

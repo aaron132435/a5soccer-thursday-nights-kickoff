@@ -18,8 +18,12 @@ const Standings = () => {
   ];
 
   const handleDownloadSchedule = () => {
-    // This will be updated when the PDF is uploaded
-    alert('Schedule PDF will be available soon! Please check back or contact us for updates.');
+    const link = document.createElement('a');
+    link.href = '/schedule.pdf';
+    link.download = 'Thursday-Coed-Schedule.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
