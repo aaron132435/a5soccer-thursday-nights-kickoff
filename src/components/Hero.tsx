@@ -34,15 +34,15 @@ const Hero = () => {
             </div>
             
             <div className="flex flex-col items-center p-6 bg-white/10 rounded-lg backdrop-blur-sm">
-              <Calendar className="w-12 h-12 mb-4 text-green-300" />
-              <h3 className="text-lg font-semibold mb-2">8 Game Season</h3>
-              <p className="text-green-100 text-center">Starting September 18th, Thursday nights</p>
+              <Users className="w-12 h-12 mb-4 text-green-300" />
+              <h3 className="text-lg font-semibold mb-2">Team Building</h3>
+              <p className="text-green-100 text-center">Build lasting friendships on and off the field</p>
             </div>
             
             <div className="flex flex-col items-center p-6 bg-white/10 rounded-lg backdrop-blur-sm">
-              <MapPin className="w-12 h-12 mb-4 text-green-300" />
-              <h3 className="text-lg font-semibold mb-2">Ridge Road Park</h3>
-              <p className="text-green-100 text-center">Germantown, Maryland</p>
+              <Calendar className="w-12 h-12 mb-4 text-green-300" />
+              <h3 className="text-lg font-semibold mb-2">All Skill Levels</h3>
+              <p className="text-green-100 text-center">From beginners to veterans, everyone welcome</p>
             </div>
           </div>
           
