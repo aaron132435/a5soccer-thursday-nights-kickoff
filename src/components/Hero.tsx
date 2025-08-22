@@ -29,8 +29,8 @@ const Hero = () => {
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="flex flex-col items-center p-6 bg-white/10 rounded-lg backdrop-blur-sm">
               <Users className="w-12 h-12 mb-4 text-green-300" />
-              <h3 className="text-lg font-semibold mb-2">Coed 11v11</h3>
-              <p className="text-green-100 text-center">Mixed teams, full field soccer</p>
+              <h3 className="text-lg font-semibold mb-2">Coed & Men's 11v11</h3>
+              <p className="text-green-100 text-center">Multiple leagues, full field soccer</p>
             </div>
             
             <div className="flex flex-col items-center p-6 bg-white/10 rounded-lg backdrop-blur-sm">
