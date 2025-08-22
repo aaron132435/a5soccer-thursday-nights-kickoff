@@ -88,11 +88,11 @@ const Seasons = () => {
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="bg-blue-50 p-4 rounded-lg">
-                  <p className="text-blue-800 font-semibold mb-2">Coming This Fall</p>
+                  <p className="text-blue-800 font-semibold mb-2">Starting September 9th</p>
                   <div className="text-blue-700 space-y-1">
                     <p><strong>Format:</strong> Men's 11v11</p>
                     <p><strong>Day:</strong> Tuesday nights</p>
-                    <p><strong>Location:</strong> Ridge Road Park</p>
+                    <p><strong>Location:</strong> Laytonia Park</p>
                   </div>
                 </div>
                 
@@ -117,11 +117,11 @@ const Seasons = () => {
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="bg-blue-50 p-4 rounded-lg">
-                  <p className="text-blue-800 font-semibold mb-2">Coming This Fall</p>
+                  <p className="text-blue-800 font-semibold mb-2">Starting September 25th</p>
                   <div className="text-blue-700 space-y-1">
                     <p><strong>Format:</strong> Coed 11v11</p>
                     <p><strong>Day:</strong> Thursday nights</p>
-                    <p><strong>Location:</strong> Ridge Road Park</p>
+                    <p><strong>Location:</strong> Laytonia Park</p>
                   </div>
                 </div>
                 
