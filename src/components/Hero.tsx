@@ -46,21 +46,13 @@ const Hero = () => {
             </div>
           </div>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex justify-center">
             <Button 
               size="lg" 
               className="bg-green-500 hover:bg-green-400 text-white px-8 py-4 text-lg font-semibold transition-all duration-300 transform hover:scale-105"
               onClick={() => document.getElementById('free-agent')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Join as Free Agent
-            </Button>
-            <Button 
-              size="lg" 
-              variant="outline" 
-              className="border-2 border-white text-white hover:bg-white hover:text-green-700 px-8 py-4 text-lg font-semibold transition-all duration-300"
-              onClick={() => document.getElementById('schedule')?.scrollIntoView({ behavior: 'smooth' })}
-            >
-              View Schedule
             </Button>
           </div>
         </div>
