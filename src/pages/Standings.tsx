@@ -7,14 +7,14 @@ import { Link } from "react-router-dom";
 const Standings = () => {
   // Current standings data
   const standings = [
-    { position: 1, team: "Blue Lock", points: 12, wins: 4, losses: 1, draws: 0, ps: 14, psa: 9, psd: 5, played: 5 },
-    { position: 2, team: "Cesena FC", points: 10, wins: 3, losses: 1, draws: 1, ps: 16, psa: 8, psd: 8, played: 5 },
+    { position: 1, team: "Blue Lock", points: 15, wins: 5, losses: 1, draws: 0, ps: 19, psa: 11, psd: 8, played: 6 },
+    { position: 2, team: "Cesena FC", points: 13, wins: 4, losses: 1, draws: 1, ps: 17, psa: 8, psd: 9, played: 6 },
     { position: 3, team: "Peeps FC", points: 9, wins: 3, losses: 2, draws: 0, ps: 10, psa: 10, psd: 0, played: 5 },
     { position: 4, team: "The Paulers", points: 9, wins: 3, losses: 2, draws: 0, ps: 11, psa: 9, psd: 2, played: 5 },
-    { position: 5, team: "Under Construction United", points: 3, wins: 1, losses: 2, draws: 0, ps: 8, psa: 8, psd: 0, played: 3 },
-    { position: 6, team: "A Good Team Name", points: 4, wins: 1, losses: 3, draws: 1, ps: 4, psa: 10, psd: -6, played: 5 },
-    { position: 7, team: "Orange Crush", points: 4, wins: 1, losses: 3, draws: 1, ps: 9, psa: 14, psd: -5, played: 5 },
-    { position: 8, team: "Karma FC", points: 1, wins: 0, losses: 2, draws: 1, ps: 4, psa: 8, psd: -4, played: 3 },
+    { position: 5, team: "A Good Team Name", points: 4, wins: 1, losses: 3, draws: 1, ps: 4, psa: 10, psd: -6, played: 5 },
+    { position: 6, team: "Orange Crush", points: 4, wins: 1, losses: 3, draws: 1, ps: 9, psa: 14, psd: -5, played: 5 },
+    { position: 7, team: "Under Construction United", points: 3, wins: 1, losses: 3, draws: 0, ps: 10, psa: 13, psd: -3, played: 4 },
+    { position: 8, team: "Karma FC", points: 1, wins: 0, losses: 3, draws: 1, ps: 4, psa: 9, psd: -5, played: 4 },
   ];
 
   const handleDownloadSchedule = () => {
