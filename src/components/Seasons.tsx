@@ -79,7 +79,7 @@ const Seasons = () => {
                 </div>
                 
                 <div className="flex flex-col gap-3">
-                  <Link to="/standings">
+                  <Link to="/tuesday-mens-standings">
                     <Button 
                       size="lg" 
                       className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 w-full"
