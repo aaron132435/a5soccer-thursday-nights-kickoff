@@ -130,10 +130,6 @@ const Standings = () => {
                     <p className="text-gray-600">September 9th</p>
                   </div>
                   <div>
-                    <p className="font-semibold text-gray-800">Day</p>
-                    <p className="text-gray-600">Tuesday nights</p>
-                  </div>
-                  <div>
                     <p className="font-semibold text-gray-800">Location</p>
                     <p className="text-gray-600">Laytonia Park</p>
                   </div>
