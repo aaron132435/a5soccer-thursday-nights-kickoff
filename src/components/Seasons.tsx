@@ -14,41 +14,31 @@ const Seasons = () => {
           </p>
         </div>
         
-        {/* Current Season */}
+        {/* Current Seasons */}
         <div className="mb-12">
-          <h3 className="text-2xl font-bold text-center text-green-700 mb-8">Current Season</h3>
-          <div className="max-w-2xl mx-auto">
+          <h3 className="text-2xl font-bold text-center text-green-700 mb-8">Current Seasons</h3>
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            
+            {/* Thursday Coed Summer Session */}
             <Card className="text-center hover:shadow-lg transition-shadow duration-300 border-green-200">
               <CardHeader>
                 <Trophy className="w-16 h-16 text-green-600 mx-auto mb-4" />
-                <CardTitle className="text-2xl text-green-700">Thursday Coed Summer Session</CardTitle>
+                <CardTitle className="text-xl text-green-700">Thursday Coed Summer Session</CardTitle>
               </CardHeader>
-              <CardContent className="space-y-6">
-                <div className="bg-green-50 p-6 rounded-lg">
-                  <div className="grid md:grid-cols-3 gap-4 text-center">
-                    <div>
-                      <Users className="w-8 h-8 text-green-600 mx-auto mb-2" />
-                      <p className="font-semibold text-green-800">Format</p>
-                      <p className="text-green-700">Coed 11v11</p>
-                    </div>
-                    <div>
-                      <Calendar className="w-8 h-8 text-green-600 mx-auto mb-2" />
-                      <p className="font-semibold text-green-800">Duration</p>
-                      <p className="text-green-700">8 Games</p>
-                    </div>
-                    <div>
-                      <Trophy className="w-8 h-8 text-green-600 mx-auto mb-2" />
-                      <p className="font-semibold text-green-800">Location</p>
-                      <p className="text-green-700">Ridge Road Park</p>
-                    </div>
+              <CardContent className="space-y-4">
+                <div className="bg-green-50 p-4 rounded-lg">
+                  <div className="text-green-700 space-y-1">
+                    <p><strong>Format:</strong> Coed 11v11</p>
+                    <p><strong>Duration:</strong> 8 Games</p>
+                    <p><strong>Location:</strong> Ridge Road Park</p>
                   </div>
                 </div>
                 
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <div className="flex flex-col gap-3">
                   <Link to="/standings">
                     <Button 
                       size="lg" 
-                      className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 text-lg font-semibold"
+                      className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 w-full"
                     >
                       View Current Standings
                     </Button>
@@ -56,7 +46,7 @@ const Seasons = () => {
                   
                   <Button 
                     size="lg" 
-                    className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 text-lg font-semibold"
+                    className="bg-green-600 hover:bg-green-700 text-white px-6 py-3"
                     onClick={() => {
                       const link = document.createElement('a');
                       link.href = '/schedule.pdf';
@@ -66,48 +56,46 @@ const Seasons = () => {
                       document.body.removeChild(link);
                     }}
                   >
-                    <Download className="w-5 h-5 mr-2" />
+                    <Download className="w-4 h-4 mr-2" />
                     Download Schedule
                   </Button>
                 </div>
               </CardContent>
             </Card>
-          </div>
-        </div>
-        
-        {/* Future Sessions */}
-        <div>
-          <h3 className="text-2xl font-bold text-center text-blue-700 mb-8">Upcoming Sessions</h3>
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            
+
             {/* Tuesday Men's Fall Session */}
-            <Card className="text-center hover:shadow-lg transition-shadow duration-300 border-blue-200">
+            <Card className="text-center hover:shadow-lg transition-shadow duration-300 border-green-200">
               <CardHeader>
-                <Calendar className="w-16 h-16 text-blue-600 mx-auto mb-4" />
-                <CardTitle className="text-xl text-blue-700">Tuesday Men's Fall Session</CardTitle>
+                <Trophy className="w-16 h-16 text-green-600 mx-auto mb-4" />
+                <CardTitle className="text-xl text-green-700">Tuesday Men's Fall Session</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
-                <div className="bg-blue-50 p-4 rounded-lg">
-                  <p className="text-blue-800 font-semibold mb-2">Starting September 9th</p>
-                  <div className="text-blue-700 space-y-1">
+                <div className="bg-green-50 p-4 rounded-lg">
+                  <p className="text-green-800 font-semibold mb-2">Started September 9th</p>
+                  <div className="text-green-700 space-y-1">
                     <p><strong>Format:</strong> Men's 11v11</p>
                     <p><strong>Day:</strong> Tuesday nights</p>
                     <p><strong>Location:</strong> Laytonia Park</p>
                   </div>
                 </div>
                 
-                <Button 
-                  size="lg" 
-                  className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3"
-                  onClick={() => {
-                    window.open('https://docs.google.com/forms/d/e/1FAIpQLSczmKlQKJB_NNkExrBExBnPu2f7kpkvejeoAmEZmoTm2c254A/viewform?usp=dialog', '_blank');
-                  }}
-                >
-                  <ExternalLink className="w-4 h-4 mr-2" />
-                  Sign Up for Tuesday Men's
-                </Button>
+                <Link to="/standings">
+                  <Button 
+                    size="lg" 
+                    className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 w-full"
+                  >
+                    View Current Standings
+                  </Button>
+                </Link>
               </CardContent>
             </Card>
+          </div>
+        </div>
+        
+        {/* Upcoming Sessions */}
+        <div>
+          <h3 className="text-2xl font-bold text-center text-blue-700 mb-8">Upcoming Sessions</h3>
+          <div className="max-w-2xl mx-auto">
             
             {/* Thursday Coed Fall Session */}
             <Card className="text-center hover:shadow-lg transition-shadow duration-300 border-blue-200">
