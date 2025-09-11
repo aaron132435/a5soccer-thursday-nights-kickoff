@@ -5,16 +5,14 @@ import { Download, ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Standings = () => {
-  // Current standings data
+  // Current standings data - Tuesday Men's Fall Season
   const standings = [
-    { position: 1, team: "Blue Lock", points: 15, wins: 5, losses: 1, draws: 0, ps: 19, psa: 11, psd: 8, played: 6 },
-    { position: 2, team: "Cesena FC", points: 13, wins: 4, losses: 1, draws: 1, ps: 17, psa: 8, psd: 9, played: 6 },
-    { position: 3, team: "Peeps FC", points: 9, wins: 3, losses: 2, draws: 0, ps: 10, psa: 10, psd: 0, played: 5 },
-    { position: 4, team: "The Paulers", points: 9, wins: 3, losses: 2, draws: 0, ps: 11, psa: 9, psd: 2, played: 5 },
-    { position: 5, team: "A Good Team Name", points: 4, wins: 1, losses: 3, draws: 1, ps: 4, psa: 10, psd: -6, played: 5 },
-    { position: 6, team: "Orange Crush", points: 4, wins: 1, losses: 3, draws: 1, ps: 9, psa: 14, psd: -5, played: 5 },
-    { position: 7, team: "Under Construction United", points: 3, wins: 1, losses: 3, draws: 0, ps: 10, psa: 13, psd: -3, played: 4 },
-    { position: 8, team: "Karma FC", points: 1, wins: 0, losses: 3, draws: 1, ps: 4, psa: 9, psd: -5, played: 4 },
+    { position: 1, team: "FC Lions/ FC Dinos", points: 3, wins: 1, losses: 0, draws: 0, ps: 1, psa: 0, psd: 1, played: 1 },
+    { position: 2, team: "Blue Lock", points: 3, wins: 1, losses: 0, draws: 0, ps: 2, psa: 1, psd: 1, played: 1 },
+    { position: 3, team: "The Paulers", points: 3, wins: 1, losses: 0, draws: 0, ps: 2, psa: 1, psd: 1, played: 1 },
+    { position: 4, team: "Big Dawgs FC", points: 0, wins: 0, losses: 1, draws: 0, ps: 0, psa: 1, psd: -1, played: 1 },
+    { position: 5, team: "Karma FC", points: 0, wins: 0, losses: 1, draws: 0, ps: 1, psa: 2, psd: -1, played: 1 },
+    { position: 6, team: "Cesena USA FC", points: 0, wins: 0, losses: 1, draws: 0, ps: 1, psa: 2, psd: -1, played: 1 },
   ];
 
   const handleDownloadSchedule = () => {
@@ -40,7 +38,7 @@ const Standings = () => {
             </Link>
           </div>
           <div className="text-center">
-            <h1 className="text-4xl font-bold mb-4">Thursday Coed Summer Session</h1>
+            <h1 className="text-4xl font-bold mb-4">Tuesday Men's Fall Session</h1>
             <p className="text-xl text-green-100">Current Standings & Schedule</p>
           </div>
         </div>
@@ -125,19 +123,19 @@ const Standings = () => {
                 <CardContent className="space-y-3">
                   <div>
                     <p className="font-semibold text-gray-800">Format</p>
-                    <p className="text-gray-600">Coed 11v11</p>
+                    <p className="text-gray-600">Men's 11v11</p>
                   </div>
                   <div>
-                    <p className="font-semibold text-gray-800">Games</p>
-                    <p className="text-gray-600">8 game season</p>
+                    <p className="font-semibold text-gray-800">Started</p>
+                    <p className="text-gray-600">September 9th</p>
                   </div>
                   <div>
                     <p className="font-semibold text-gray-800">Day</p>
-                    <p className="text-gray-600">Thursday nights</p>
+                    <p className="text-gray-600">Tuesday nights</p>
                   </div>
                   <div>
                     <p className="font-semibold text-gray-800">Location</p>
-                    <p className="text-gray-600">Ridge Road Park<br />Germantown, Maryland</p>
+                    <p className="text-gray-600">Laytonia Park</p>
                   </div>
                 </CardContent>
               </Card>
