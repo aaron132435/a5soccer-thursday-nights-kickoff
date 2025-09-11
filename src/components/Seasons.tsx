@@ -74,19 +74,36 @@ const Seasons = () => {
                   <p className="text-green-800 font-semibold mb-2">Started September 9th</p>
                   <div className="text-green-700 space-y-1">
                     <p><strong>Format:</strong> Men's 11v11</p>
-                    <p><strong>Day:</strong> Tuesday nights</p>
                     <p><strong>Location:</strong> Laytonia Park</p>
                   </div>
                 </div>
                 
-                <Link to="/standings">
+                <div className="flex flex-col gap-3">
+                  <Link to="/standings">
+                    <Button 
+                      size="lg" 
+                      className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 w-full"
+                    >
+                      View Current Standings
+                    </Button>
+                  </Link>
+                  
                   <Button 
                     size="lg" 
-                    className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 w-full"
+                    className="bg-green-600 hover:bg-green-700 text-white px-6 py-3"
+                    onClick={() => {
+                      const link = document.createElement('a');
+                      link.href = '/tuesday-schedule.pdf';
+                      link.download = 'Tuesday-Mens-Schedule.pdf';
+                      document.body.appendChild(link);
+                      link.click();
+                      document.body.removeChild(link);
+                    }}
                   >
-                    View Current Standings
+                    <Download className="w-4 h-4 mr-2" />
+                    Download Schedule
                   </Button>
-                </Link>
+                </div>
               </CardContent>
             </Card>
           </div>
