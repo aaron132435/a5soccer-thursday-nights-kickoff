@@ -129,7 +129,7 @@ const Standings = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-gray-800">Games</p>
-                    <p className="text-gray-600">8 game season</p>
+                    <p className="text-gray-600">7 game season</p>
                   </div>
                   <div>
                     <p className="font-semibold text-gray-800">Day</p>
@@ -137,7 +137,7 @@ const Standings = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-gray-800">Location</p>
-                    <p className="text-gray-600">Laytonia Park<br />Germantown, Maryland</p>
+                    <p className="text-gray-600">Laytonia Park<br />Gaithersburg, Maryland</p>
                   </div>
                 </CardContent>
               </Card>
