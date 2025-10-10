@@ -19,18 +19,18 @@ const Seasons = () => {
           <h3 className="text-2xl font-bold text-center text-green-700 mb-8">Current Seasons</h3>
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             
-            {/* Thursday Coed Summer Session */}
+            {/* Thursday Coed Fall Session */}
             <Card className="text-center hover:shadow-lg transition-shadow duration-300 border-green-200">
               <CardHeader>
                 <Trophy className="w-16 h-16 text-green-600 mx-auto mb-4" />
-                <CardTitle className="text-xl text-green-700">Thursday Coed Summer Session</CardTitle>
+                <CardTitle className="text-xl text-green-700">Thursday Coed Fall Session</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="bg-green-50 p-4 rounded-lg">
                   <div className="text-green-700 space-y-1">
                     <p><strong>Format:</strong> Coed 11v11</p>
                     <p><strong>Duration:</strong> 8 Games</p>
-                    <p><strong>Location:</strong> Ridge Road Park</p>
+                    <p><strong>Location:</strong> Laytonia Park</p>
                   </div>
                 </div>
                 
@@ -113,35 +113,7 @@ const Seasons = () => {
         <div>
           <h3 className="text-2xl font-bold text-center text-blue-700 mb-8">Upcoming Sessions</h3>
           <div className="max-w-2xl mx-auto">
-            
-            {/* Thursday Coed Fall Session */}
-            <Card className="text-center hover:shadow-lg transition-shadow duration-300 border-blue-200">
-              <CardHeader>
-                <Calendar className="w-16 h-16 text-blue-600 mx-auto mb-4" />
-                <CardTitle className="text-xl text-blue-700">Thursday Coed Fall Session</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <div className="bg-blue-50 p-4 rounded-lg">
-                  <p className="text-blue-800 font-semibold mb-2">Starting September 25th</p>
-                  <div className="text-blue-700 space-y-1">
-                    <p><strong>Format:</strong> Coed 11v11</p>
-                    <p><strong>Day:</strong> Thursday nights</p>
-                    <p><strong>Location:</strong> Laytonia Park</p>
-                  </div>
-                </div>
-                
-                <Button 
-                  size="lg" 
-                  className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3"
-                  onClick={() => {
-                    window.open('https://docs.google.com/forms/d/e/1FAIpQLSczmKlQKJB_NNkExrBExBnPu2f7kpkvejeoAmEZmoTm2c254A/viewform?usp=dialog', '_blank');
-                  }}
-                >
-                  <ExternalLink className="w-4 h-4 mr-2" />
-                  Sign Up for Thursday Coed
-                </Button>
-              </CardContent>
-            </Card>
+            <p className="text-center text-gray-600">Check back soon for upcoming sessions!</p>
           </div>
         </div>
       </div>
