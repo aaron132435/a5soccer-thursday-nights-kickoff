@@ -7,12 +7,12 @@ import { Link } from "react-router-dom";
 const TuesdayMensStandings = () => {
   // Current standings data - Tuesday Men's Fall Season
   const standings = [
-    { position: 1, team: "The Paulers", points: 10, wins: 3, losses: 0, draws: 1, ps: 9, psa: 5, psd: 4, played: 4 },
-    { position: 2, team: "FC Lions/ FC Dinos", points: 8, wins: 2, losses: 0, draws: 2, ps: 7, psa: 3, psd: 4, played: 4 },
-    { position: 3, team: "Blue Lock", points: 7, wins: 2, losses: 1, draws: 1, ps: 5, psa: 4, psd: 1, played: 4 },
-    { position: 4, team: "Cesena USA FC", points: 6, wins: 2, losses: 2, draws: 0, ps: 14, psa: 5, psd: 9, played: 4 },
-    { position: 5, team: "Big Dawgs FC", points: 3, wins: 1, losses: 3, draws: 0, ps: 4, psa: 7, psd: -3, played: 4 },
-    { position: 6, team: "Karma FC", points: 0, wins: 0, losses: 4, draws: 0, ps: 3, psa: 18, psd: -15, played: 4 },
+    { position: 1, team: "Blue Lock", points: 10, wins: 3, losses: 1, draws: 1, ps: 10, psa: 5, psd: 5, played: 5 },
+    { position: 2, team: "The Paulers", points: 10, wins: 3, losses: 1, draws: 1, ps: 10, psa: 11, psd: -1, played: 5 },
+    { position: 3, team: "Cesena USA FC", points: 9, wins: 3, losses: 2, draws: 0, ps: 19, psa: 6, psd: 13, played: 5 },
+    { position: 4, team: "FC Lions/ FC Dinos", points: 9, wins: 2, losses: 0, draws: 3, ps: 10, psa: 6, psd: 4, played: 5 },
+    { position: 5, team: "Big Dawgs FC", points: 4, wins: 1, losses: 3, draws: 1, ps: 7, psa: 10, psd: -3, played: 5 },
+    { position: 6, team: "Karma FC", points: 0, wins: 0, losses: 5, draws: 0, ps: 4, psa: 23, psd: -19, played: 5 },
   ];
 
   const handleDownloadSchedule = () => {
