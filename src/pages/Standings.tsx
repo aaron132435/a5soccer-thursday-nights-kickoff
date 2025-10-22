@@ -7,14 +7,14 @@ import { Link } from "react-router-dom";
 const Standings = () => {
   // Current standings data - Thursday Coed Fall Session
   const standings = [
-    { position: 1, team: "Blue Lock", points: 6, wins: 2, losses: 0, draws: 0, ps: 11, psa: 4, psd: 7, played: 2 },
-    { position: 2, team: "Peeps FC", points: 6, wins: 2, losses: 0, draws: 0, ps: 6, psa: 2, psd: 4, played: 2 },
-    { position: 3, team: "A Good Team Name", points: 4, wins: 1, losses: 0, draws: 1, ps: 5, psa: 3, psd: 2, played: 2 },
-    { position: 4, team: "The Paulers", points: 3, wins: 1, losses: 1, draws: 0, ps: 9, psa: 5, psd: 4, played: 2 },
-    { position: 5, team: "Cesena USA FC", points: 3, wins: 1, losses: 1, draws: 0, ps: 5, psa: 4, psd: 1, played: 2 },
-    { position: 6, team: "SBI", points: 1, wins: 0, losses: 0, draws: 1, ps: 3, psa: 6, psd: -3, played: 2 },
-    { position: 7, team: "New 11's Team FC", points: 0, wins: 0, losses: 2, draws: 0, ps: 1, psa: 6, psd: -5, played: 2 },
-    { position: 8, team: "Gold Rush", points: 0, wins: 0, losses: 2, draws: 0, ps: 6, psa: 16, psd: -10, played: 2 },
+    { position: 1, team: "Blue Lock", points: 12, wins: 4, losses: 0, draws: 0, ps: 22, psa: 5, psd: 17, played: 4 },
+    { position: 2, team: "Peeps FC", points: 9, wins: 3, losses: 0, draws: 0, ps: 12, psa: 2, psd: 10, played: 3 },
+    { position: 3, team: "The Paulers", points: 6, wins: 2, losses: 1, draws: 0, ps: 11, psa: 6, psd: 5, played: 3 },
+    { position: 4, team: "A Good Team Name", points: 4, wins: 1, losses: 2, draws: 1, ps: 6, psa: 11, psd: -5, played: 4 },
+    { position: 5, team: "Cesena USA FC", points: 3, wins: 1, losses: 2, draws: 0, ps: 5, psa: 13, psd: -8, played: 3 },
+    { position: 6, team: "Gold Rush", points: 3, wins: 1, losses: 2, draws: 0, ps: 10, psa: 19, psd: -9, played: 3 },
+    { position: 7, team: "SBI", points: 1, wins: 0, losses: 2, draws: 1, ps: 4, psa: 8, psd: -4, played: 3 },
+    { position: 8, team: "New 11's Team FC", points: 0, wins: 0, losses: 3, draws: 0, ps: 4, psa: 10, psd: -6, played: 3 },
   ];
 
   const handleDownloadSchedule = () => {
