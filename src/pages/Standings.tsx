@@ -7,14 +7,14 @@ import { Link } from "react-router-dom";
 const Standings = () => {
   // Current standings data - Thursday Coed Fall Session
   const standings = [
-    { position: 1, team: "Blue Lock", points: 12, wins: 4, losses: 0, draws: 0, ps: 22, psa: 5, psd: 17, played: 4 },
-    { position: 2, team: "Peeps FC", points: 9, wins: 3, losses: 0, draws: 0, ps: 12, psa: 2, psd: 10, played: 3 },
-    { position: 3, team: "The Paulers", points: 6, wins: 2, losses: 1, draws: 0, ps: 11, psa: 6, psd: 5, played: 3 },
-    { position: 4, team: "A Good Team Name", points: 4, wins: 1, losses: 2, draws: 1, ps: 6, psa: 11, psd: -5, played: 4 },
-    { position: 5, team: "Cesena USA FC", points: 3, wins: 1, losses: 2, draws: 0, ps: 5, psa: 13, psd: -8, played: 3 },
-    { position: 6, team: "Gold Rush", points: 3, wins: 1, losses: 2, draws: 0, ps: 10, psa: 19, psd: -9, played: 3 },
-    { position: 7, team: "SBI", points: 1, wins: 0, losses: 2, draws: 1, ps: 4, psa: 8, psd: -4, played: 3 },
-    { position: 8, team: "New 11's Team FC", points: 0, wins: 0, losses: 3, draws: 0, ps: 4, psa: 10, psd: -6, played: 3 },
+    { position: 1, team: "Blue Lock", points: 15, wins: 4, losses: 0, draws: 0, ps: 26, psa: 7, psd: 19, played: 5 },
+    { position: 2, team: "Peeps FC", points: 15, wins: 5, losses: 0, draws: 0, ps: 15, psa: 2, psd: 13, played: 5 },
+    { position: 3, team: "The Paulers", points: 12, wins: 4, losses: 1, draws: 0, ps: 21, psa: 11, psd: 10, played: 5 },
+    { position: 4, team: "A Good Team Name", points: 7, wins: 2, losses: 2, draws: 1, ps: 9, psa: 11, psd: -2, played: 5 },
+    { position: 5, team: "Cesena USA FC", points: 3, wins: 1, losses: 3, draws: 0, ps: 9, psa: 18, psd: -9, played: 4 },
+    { position: 6, team: "Gold Rush", points: 3, wins: 1, losses: 3, draws: 0, ps: 10, psa: 22, psd: -12, played: 4 },
+    { position: 7, team: "SBI", points: 1, wins: 0, losses: 4, draws: 1, ps: 5, psa: 14, psd: -9, played: 5 },
+    { position: 8, team: "New 11's Team FC", points: 0, wins: 0, losses: 5, draws: 0, ps: 6, psa: 15, psd: -9, played: 5 },
   ];
 
   const handleDownloadSchedule = () => {
