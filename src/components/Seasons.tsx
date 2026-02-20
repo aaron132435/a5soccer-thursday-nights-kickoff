@@ -123,9 +123,17 @@ const Seasons = () => {
                   <p className="text-blue-800 font-semibold mb-2">Starts April 7th</p>
                   <div className="text-blue-700 space-y-1">
                     <p><strong>Format:</strong> Men's 11v11</p>
+                    <p><strong>Duration:</strong> 8 Games</p>
                     <p><strong>Location:</strong> Laytonia Park</p>
                   </div>
                 </div>
+                
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSczmKlQKJB_NNkExrBExBnPu2f7kpkvejeoAmEZmoTm2c254A/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">
+                  <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 w-full">
+                    <ExternalLink className="w-4 h-4 mr-2" />
+                    Sign Up Now
+                  </Button>
+                </a>
               </CardContent>
             </Card>
           </div>
