@@ -112,8 +112,22 @@ const Seasons = () => {
         {/* Upcoming Sessions */}
         <div>
           <h3 className="text-2xl font-bold text-center text-blue-700 mb-8">Upcoming Sessions</h3>
-          <div className="max-w-2xl mx-auto">
-            <p className="text-center text-gray-600">Check back soon for upcoming sessions!</p>
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <Card className="text-center hover:shadow-lg transition-shadow duration-300 border-blue-200">
+              <CardHeader>
+                <Calendar className="w-16 h-16 text-blue-600 mx-auto mb-4" />
+                <CardTitle className="text-xl text-blue-700">Tuesday Men's Spring Season</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="bg-blue-50 p-4 rounded-lg">
+                  <p className="text-blue-800 font-semibold mb-2">Starts April 7th</p>
+                  <div className="text-blue-700 space-y-1">
+                    <p><strong>Format:</strong> Men's 11v11</p>
+                    <p><strong>Location:</strong> Laytonia Park</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </div>
