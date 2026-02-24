@@ -112,7 +112,56 @@ const Seasons = () => {
         {/* Upcoming Sessions */}
         <div>
           <h3 className="text-2xl font-bold text-center text-blue-700 mb-8">Upcoming Sessions</h3>
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <p className="text-center text-red-600 font-semibold mb-8">Sign Up Deadline: March 20th</p>
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <Card className="text-center hover:shadow-lg transition-shadow duration-300 border-blue-200">
+              <CardHeader>
+                <Calendar className="w-16 h-16 text-blue-600 mx-auto mb-4" />
+                <CardTitle className="text-xl text-blue-700">Friday Coed Spring Season</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="bg-blue-50 p-4 rounded-lg">
+                  <p className="text-blue-800 font-semibold mb-2">Starts April 3rd</p>
+                  <div className="text-blue-700 space-y-1">
+                    <p><strong>Format:</strong> Coed 11v11</p>
+                    <p><strong>Duration:</strong> 8 Games</p>
+                    <p><strong>Location:</strong> Laytonia Park</p>
+                  </div>
+                </div>
+                
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSczmKlQKJB_NNkExrBExBnPu2f7kpkvejeoAmEZmoTm2c254A/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">
+                  <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 w-full">
+                    <ExternalLink className="w-4 h-4 mr-2" />
+                    Sign Up Now
+                  </Button>
+                </a>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center hover:shadow-lg transition-shadow duration-300 border-blue-200">
+              <CardHeader>
+                <Calendar className="w-16 h-16 text-blue-600 mx-auto mb-4" />
+                <CardTitle className="text-xl text-blue-700">Saturday Coed Spring Season</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="bg-blue-50 p-4 rounded-lg">
+                  <p className="text-blue-800 font-semibold mb-2">Starts April 4th</p>
+                  <div className="text-blue-700 space-y-1">
+                    <p><strong>Format:</strong> Coed 11v11</p>
+                    <p><strong>Duration:</strong> 8 Games</p>
+                    <p><strong>Location:</strong> TBD</p>
+                  </div>
+                </div>
+                
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSczmKlQKJB_NNkExrBExBnPu2f7kpkvejeoAmEZmoTm2c254A/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">
+                  <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 w-full">
+                    <ExternalLink className="w-4 h-4 mr-2" />
+                    Sign Up Now
+                  </Button>
+                </a>
+              </CardContent>
+            </Card>
+
             <Card className="text-center hover:shadow-lg transition-shadow duration-300 border-blue-200">
               <CardHeader>
                 <Calendar className="w-16 h-16 text-blue-600 mx-auto mb-4" />
