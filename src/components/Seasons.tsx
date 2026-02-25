@@ -151,7 +151,7 @@ const Seasons = () => {
                     <p><strong>Format:</strong> Coed 11v11</p>
                     <p><strong>Duration:</strong> 8 Games</p>
                     <p><strong>Halves:</strong> 40 Minutes</p>
-                    <p><strong>Location:</strong> TBD</p>
+                    <p><strong>Location:</strong> Germantown</p>
                   </div>
                 </div>
                 
