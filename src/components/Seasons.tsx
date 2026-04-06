@@ -17,7 +17,7 @@ const Seasons = () => {
         {/* Current Seasons */}
         <div className="mb-12">
           <h3 className="text-2xl font-bold text-center text-green-700 mb-8">Current Seasons</h3>
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             
             {/* Thursday Coed Fall Session */}
             <Card className="text-center hover:shadow-lg transition-shadow duration-300 border-green-200">
