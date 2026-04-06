@@ -118,18 +118,34 @@ const Seasons = () => {
                   <div className="text-green-700 space-y-1">
                     <p><strong>Format:</strong> Coed 11v11</p>
                     <p><strong>Duration:</strong> 8 Games</p>
-                    <p><strong>Halves:</strong> 40 Minutes</p>
                     <p><strong>Location:</strong> Germantown</p>
                   </div>
                 </div>
                 
                 <div className="flex flex-col gap-3">
+                  <Link to="/saturday-coed-standings">
+                    <Button 
+                      size="lg" 
+                      className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 w-full"
+                    >
+                      View Current Standings
+                    </Button>
+                  </Link>
+                  
                   <Button 
                     size="lg" 
-                    className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 w-full"
-                    disabled
+                    className="bg-green-600 hover:bg-green-700 text-white px-6 py-3"
+                    onClick={() => {
+                      const link = document.createElement('a');
+                      link.href = '/saturday-schedule.pdf';
+                      link.download = 'Saturday-Coed-Schedule.pdf';
+                      document.body.appendChild(link);
+                      link.click();
+                      document.body.removeChild(link);
+                    }}
                   >
-                    Standings Coming Soon
+                    <Download className="w-4 h-4 mr-2" />
+                    Download Schedule
                   </Button>
                 </div>
               </CardContent>
