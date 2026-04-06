@@ -23,7 +23,7 @@ const Seasons = () => {
             <Card className="text-center hover:shadow-lg transition-shadow duration-300 border-green-200">
               <CardHeader>
                 <Trophy className="w-16 h-16 text-green-600 mx-auto mb-4" />
-                <CardTitle className="text-xl text-green-700">Friday Coed Fall Session</CardTitle>
+                <CardTitle className="text-xl text-green-700">Friday Coed Spring Session</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="bg-green-50 p-4 rounded-lg">
@@ -67,11 +67,11 @@ const Seasons = () => {
             <Card className="text-center hover:shadow-lg transition-shadow duration-300 border-green-200">
               <CardHeader>
                 <Trophy className="w-16 h-16 text-green-600 mx-auto mb-4" />
-                <CardTitle className="text-xl text-green-700">Tuesday Men's Fall Session</CardTitle>
+                <CardTitle className="text-xl text-green-700">Tuesday Men's Spring Session</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="bg-green-50 p-4 rounded-lg">
-                  <p className="text-green-800 font-semibold mb-2">Started September 9th</p>
+                  <p className="text-green-800 font-semibold mb-2">Started April 7th</p>
                   <div className="text-green-700 space-y-1">
                     <p><strong>Format:</strong> Men's 11v11</p>
                     <p><strong>Location:</strong> Laytonia Park</p>
