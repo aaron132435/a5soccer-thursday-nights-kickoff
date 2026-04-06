@@ -17,13 +17,13 @@ const Seasons = () => {
         {/* Current Seasons */}
         <div className="mb-12">
           <h3 className="text-2xl font-bold text-center text-green-700 mb-8">Current Seasons</h3>
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             
             {/* Thursday Coed Fall Session */}
             <Card className="text-center hover:shadow-lg transition-shadow duration-300 border-green-200">
               <CardHeader>
                 <Trophy className="w-16 h-16 text-green-600 mx-auto mb-4" />
-                <CardTitle className="text-xl text-green-700">Thursday Coed Fall Session</CardTitle>
+                <CardTitle className="text-xl text-green-700">Friday Coed Fall Session</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="bg-green-50 p-4 rounded-lg">
@@ -102,6 +102,34 @@ const Seasons = () => {
                   >
                     <Download className="w-4 h-4 mr-2" />
                     Download Schedule
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Saturday Coed Spring Session */}
+            <Card className="text-center hover:shadow-lg transition-shadow duration-300 border-green-200">
+              <CardHeader>
+                <Trophy className="w-16 h-16 text-green-600 mx-auto mb-4" />
+                <CardTitle className="text-xl text-green-700">Saturday Coed Spring Session</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="bg-green-50 p-4 rounded-lg">
+                  <div className="text-green-700 space-y-1">
+                    <p><strong>Format:</strong> Coed 11v11</p>
+                    <p><strong>Duration:</strong> 8 Games</p>
+                    <p><strong>Halves:</strong> 40 Minutes</p>
+                    <p><strong>Location:</strong> Germantown</p>
+                  </div>
+                </div>
+                
+                <div className="flex flex-col gap-3">
+                  <Button 
+                    size="lg" 
+                    className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 w-full"
+                    disabled
+                  >
+                    Standings Coming Soon
                   </Button>
                 </div>
               </CardContent>
