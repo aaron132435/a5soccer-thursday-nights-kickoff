@@ -27,9 +27,9 @@ const Seasons = () => {
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="bg-green-50 p-4 rounded-lg">
+                  <p className="text-green-800 font-semibold mb-2">Started April 3rd</p>
                   <div className="text-green-700 space-y-1">
                     <p><strong>Format:</strong> Coed 11v11</p>
-                    <p><strong>Duration:</strong> 8 Games</p>
                     <p><strong>Location:</strong> Laytonia Park</p>
                   </div>
                 </div>
@@ -115,9 +115,9 @@ const Seasons = () => {
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="bg-green-50 p-4 rounded-lg">
+                  <p className="text-green-800 font-semibold mb-2">Started April 4th</p>
                   <div className="text-green-700 space-y-1">
                     <p><strong>Format:</strong> Coed 11v11</p>
-                    <p><strong>Duration:</strong> 8 Games</p>
                     <p><strong>Location:</strong> Germantown</p>
                   </div>
                 </div>
