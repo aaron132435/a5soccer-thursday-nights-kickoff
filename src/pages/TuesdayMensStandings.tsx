@@ -133,7 +133,7 @@ const TuesdayMensStandings = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-gray-800">Started</p>
-                    <p className="text-gray-600">September 9th</p>
+                    <p className="text-gray-600">April 7th</p>
                   </div>
                   <div>
                     <p className="font-semibold text-gray-800">Location</p>
