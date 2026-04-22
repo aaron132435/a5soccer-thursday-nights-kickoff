@@ -44,7 +44,7 @@ const TuesdayMensStandings = () => {
             </Link>
           </div>
           <div className="text-center">
-            <h1 className="text-4xl font-bold mb-4">Tuesday Men's Fall Session</h1>
+            <h1 className="text-4xl font-bold mb-4">Tuesday Men's Spring Session</h1>
             <p className="text-xl text-green-100">Current Standings & Schedule</p>
           </div>
         </div>
