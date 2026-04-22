@@ -44,7 +44,7 @@ const TuesdayMensStandings = () => {
             </Link>
           </div>
           <div className="text-center">
-            <h1 className="text-4xl font-bold mb-4">Tuesday Men's Fall Session</h1>
+            <h1 className="text-4xl font-bold mb-4">Tuesday Men's Spring Session</h1>
             <p className="text-xl text-green-100">Current Standings & Schedule</p>
           </div>
         </div>
@@ -133,7 +133,7 @@ const TuesdayMensStandings = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-gray-800">Started</p>
-                    <p className="text-gray-600">September 9th</p>
+                    <p className="text-gray-600">April 7th</p>
                   </div>
                   <div>
                     <p className="font-semibold text-gray-800">Location</p>
