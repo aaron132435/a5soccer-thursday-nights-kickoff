@@ -5,15 +5,21 @@ import { Download, ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const TuesdayMensStandings = () => {
-  // Current standings data - Tuesday Men's Fall Season
-  const standings = [
-    { position: 1, team: "Cesena USA FC", points: 12, wins: 4, losses: 2, draws: 0, ps: 22, psa: 7, psd: 15, played: 6 },
-    { position: 2, team: "Blue Lock", points: 11, wins: 3, losses: 1, draws: 1, ps: 10, psa: 5, psd: 5, played: 6 },
-    { position: 3, team: "The Paulers", points: 11, wins: 3, losses: 1, draws: 1, ps: 10, psa: 11, psd: -1, played: 6 },
-    { position: 4, team: "FC Lions/ FC Dinos", points: 9, wins: 2, losses: 1, draws: 3, ps: 11, psa: 9, psd: 2, played: 6 },
-    { position: 5, team: "Big Dawgs FC", points: 5, wins: 1, losses: 3, draws: 2, ps: 10, psa: 13, psd: -3, played: 6 },
-    { position: 6, team: "Karma FC", points: 1, wins: 0, losses: 5, draws: 1, ps: 7, psa: 26, psd: -19, played: 6 },
+  // Current standings data - Tuesday Men's Spring Season
+  const rawStandings = [
+    { team: "Blue Lock", points: 3, wins: 1, losses: 0, draws: 0, ps: 3, psa: 1, psd: 2, played: 1 },
+    { team: "The Collective", points: 3, wins: 1, losses: 0, draws: 0, ps: 3, psa: 2, psd: 1, played: 1 },
+    { team: "The Paulers", points: 0, wins: 0, losses: 2, draws: 0, ps: 3, psa: 6, psd: -3, played: 2 },
+    { team: "Los Lobos FC", points: 0, wins: 0, losses: 1, draws: 0, ps: 1, psa: 3, psd: -2, played: 1 },
+    { team: "Piggy Pigs FC", points: 6, wins: 2, losses: 0, draws: 0, ps: 9, psa: 3, psd: 6, played: 2 },
+    { team: "Venator CF", points: 3, wins: 1, losses: 1, draws: 0, ps: 2, psa: 3, psd: -1, played: 2 },
+    { team: "Pikachu FC", points: 0, wins: 0, losses: 2, draws: 0, ps: 2, psa: 7, psd: -5, played: 2 },
+    { team: "Big Dawgs FC", points: 3, wins: 1, losses: 0, draws: 0, ps: 3, psa: 1, psd: 2, played: 1 },
   ];
+
+  const standings = [...rawStandings]
+    .sort((a, b) => b.points - a.points || b.psd - a.psd)
+    .map((team, index) => ({ ...team, position: index + 1 }));
 
   const handleDownloadSchedule = () => {
     const link = document.createElement('a');
