@@ -23,7 +23,7 @@ const TuesdayMensStandings = () => {
 
   const handleDownloadSchedule = () => {
     const link = document.createElement('a');
-    link.href = '/tuesday-schedule-v2.pdf';
+    link.href = '/tuesday-schedule-v3.pdf';
     link.download = 'Tuesday-Mens-Schedule.pdf';
     document.body.appendChild(link);
     link.click();
