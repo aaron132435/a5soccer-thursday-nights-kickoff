@@ -123,8 +123,8 @@ const SaturdayCoedStandings = () => {
                     <p className="text-gray-600">8 game season</p>
                   </div>
                   <div>
-                    <p className="font-semibold text-gray-800">Day</p>
-                    <p className="text-gray-600">Saturdays</p>
+                    <p className="font-semibold text-gray-800">Start Date</p>
+                    <p className="text-gray-600">April 4th</p>
                   </div>
                   <div>
                     <p className="font-semibold text-gray-800">Location</p>
