@@ -5,11 +5,20 @@ import { Download, ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const SaturdayCoedStandings = () => {
-  const standings: { position: number; team: string; points: number; wins: number; losses: number; draws: number; ps: number; psa: number; psd: number; played: number }[] = [];
+  const rawStandings = [
+    { team: "Suspect Sprinters", points: 9, wins: 3, losses: 0, draws: 0, ps: 5, psa: 2, psd: 3, played: 3 },
+    { team: "Paulers", points: 6, wins: 2, losses: 1, draws: 0, ps: 5, psa: 3, psd: 2, played: 3 },
+    { team: "Guidraco FC", points: 3, wins: 1, losses: 2, draws: 0, ps: 2, psa: 3, psd: -1, played: 3 },
+    { team: "Cobra Kai FC", points: 0, wins: 0, losses: 3, draws: 0, ps: 2, psa: 6, psd: -4, played: 3 },
+  ];
+
+  const standings = [...rawStandings]
+    .sort((a, b) => b.points - a.points || b.psd - a.psd)
+    .map((team, index) => ({ ...team, position: index + 1 }));
 
   const handleDownloadSchedule = () => {
     const link = document.createElement('a');
-    link.href = '/saturday-schedule.pdf';
+    link.href = `${import.meta.env.BASE_URL}saturday-schedule.pdf`;
     link.download = 'Saturday-Coed-Schedule.pdf';
     document.body.appendChild(link);
     link.click();
@@ -45,42 +54,38 @@ const SaturdayCoedStandings = () => {
                   <p className="text-gray-600">Updated after each game week</p>
                 </CardHeader>
                 <CardContent>
-                  {standings.length === 0 ? (
-                    <p className="text-gray-500 text-center py-8">Standings will be updated once the season begins.</p>
-                  ) : (
-                    <Table>
-                      <TableHeader>
-                        <TableRow>
-                          <TableHead className="w-16">Pos</TableHead>
-                          <TableHead>Team</TableHead>
-                          <TableHead className="text-center font-semibold">Pts</TableHead>
-                          <TableHead className="text-center">W</TableHead>
-                          <TableHead className="text-center">D</TableHead>
-                          <TableHead className="text-center">L</TableHead>
-                          <TableHead className="text-center">PS</TableHead>
-                          <TableHead className="text-center">PSA</TableHead>
-                          <TableHead className="text-center">PSD</TableHead>
-                          <TableHead className="text-center">GP</TableHead>
+                  <Table>
+                    <TableHeader>
+                      <TableRow>
+                        <TableHead className="w-16">Pos</TableHead>
+                        <TableHead>Team</TableHead>
+                        <TableHead className="text-center font-semibold">Pts</TableHead>
+                        <TableHead className="text-center">W</TableHead>
+                        <TableHead className="text-center">L</TableHead>
+                        <TableHead className="text-center">T</TableHead>
+                        <TableHead className="text-center">PS</TableHead>
+                        <TableHead className="text-center">PSA</TableHead>
+                        <TableHead className="text-center">PSD</TableHead>
+                        <TableHead className="text-center">GP</TableHead>
+                      </TableRow>
+                    </TableHeader>
+                    <TableBody>
+                      {standings.map((team) => (
+                        <TableRow key={team.position} className={team.position <= 4 ? "bg-green-50" : ""}>
+                          <TableCell className="font-medium text-center">{team.position}</TableCell>
+                          <TableCell className="font-semibold">{team.team}</TableCell>
+                          <TableCell className="text-center font-bold">{team.points}</TableCell>
+                          <TableCell className="text-center">{team.wins}</TableCell>
+                          <TableCell className="text-center">{team.losses}</TableCell>
+                          <TableCell className="text-center">{team.draws}</TableCell>
+                          <TableCell className="text-center">{team.ps}</TableCell>
+                          <TableCell className="text-center">{team.psa}</TableCell>
+                          <TableCell className="text-center">{team.psd}</TableCell>
+                          <TableCell className="text-center">{team.played}</TableCell>
                         </TableRow>
-                      </TableHeader>
-                      <TableBody>
-                        {standings.map((team) => (
-                          <TableRow key={team.position} className={team.position <= 4 ? "bg-green-50" : ""}>
-                            <TableCell className="font-medium text-center">{team.position}</TableCell>
-                            <TableCell className="font-semibold">{team.team}</TableCell>
-                            <TableCell className="text-center font-bold">{team.points}</TableCell>
-                            <TableCell className="text-center">{team.wins}</TableCell>
-                            <TableCell className="text-center">{team.draws}</TableCell>
-                            <TableCell className="text-center">{team.losses}</TableCell>
-                            <TableCell className="text-center">{team.ps}</TableCell>
-                            <TableCell className="text-center">{team.psa}</TableCell>
-                            <TableCell className="text-center">{team.psd}</TableCell>
-                            <TableCell className="text-center">{team.played}</TableCell>
-                          </TableRow>
-                        ))}
-                      </TableBody>
-                    </Table>
-                  )}
+                      ))}
+                    </TableBody>
+                  </Table>
                 </CardContent>
               </Card>
             </div>
@@ -135,12 +140,12 @@ const SaturdayCoedStandings = () => {
                 <CardContent className="text-sm space-y-1">
                   <p><strong>GP</strong> - Games Played</p>
                   <p><strong>W</strong> - Wins</p>
-                  <p><strong>D</strong> - Draws</p>
+                  <p><strong>T</strong> - Ties</p>
                   <p><strong>L</strong> - Losses</p>
                   <p><strong>PS</strong> - Points Scored</p>
                   <p><strong>PSA</strong> - Points Scored Against</p>
                   <p><strong>PSD</strong> - Point Differential</p>
-                  <p><strong>Pts</strong> - Points (3 for win, 1 for draw)</p>
+                  <p><strong>Pts</strong> - Points (3 for win, 1 for tie)</p>
                   <div className="mt-3 p-2 bg-green-50 rounded">
                     <p className="text-green-700"><strong>Top 4 teams</strong> highlighted in green</p>
                   </div>
