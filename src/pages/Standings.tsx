@@ -5,17 +5,17 @@ import { Download, ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Standings = () => {
-  // Current standings data - Thursday Coed Fall Session
-  const standings = [
-    { position: 1, team: "Blue Lock", points: 15, wins: 4, losses: 0, draws: 0, ps: 26, psa: 7, psd: 19, played: 5 },
-    { position: 2, team: "Peeps FC", points: 15, wins: 5, losses: 0, draws: 0, ps: 15, psa: 2, psd: 13, played: 5 },
-    { position: 3, team: "The Paulers", points: 12, wins: 4, losses: 1, draws: 0, ps: 21, psa: 11, psd: 10, played: 5 },
-    { position: 4, team: "A Good Team Name", points: 7, wins: 2, losses: 2, draws: 1, ps: 9, psa: 11, psd: -2, played: 5 },
-    { position: 5, team: "Cesena USA FC", points: 3, wins: 1, losses: 3, draws: 0, ps: 9, psa: 18, psd: -9, played: 4 },
-    { position: 6, team: "Gold Rush", points: 3, wins: 1, losses: 3, draws: 0, ps: 10, psa: 22, psd: -12, played: 4 },
-    { position: 7, team: "SBI", points: 1, wins: 0, losses: 4, draws: 1, ps: 5, psa: 14, psd: -9, played: 5 },
-    { position: 8, team: "New 11's Team FC", points: 0, wins: 0, losses: 5, draws: 0, ps: 6, psa: 15, psd: -9, played: 5 },
+  // Current standings data - Friday Coed Spring Session
+  const rawStandings = [
+    { team: "Germantown Impact", points: 6, wins: 1, losses: 1, draws: 0, ps: 5, psa: 6, psd: -1, played: 3 },
+    { team: "Blue Lock", points: 6, wins: 2, losses: 1, draws: 0, ps: 7, psa: 6, psd: 1, played: 3 },
+    { team: "The Paulers", points: 3, wins: 1, losses: 2, draws: 0, ps: 5, psa: 6, psd: -1, played: 3 },
+    { team: "Golden Parachutes", points: 3, wins: 1, losses: 2, draws: 0, ps: 5, psa: 3, psd: 2, played: 3 },
   ];
+
+  const standings = [...rawStandings]
+    .sort((a, b) => b.points - a.points || b.psd - a.psd)
+    .map((team, index) => ({ ...team, position: index + 1 }));
 
   const handleDownloadSchedule = () => {
     const link = document.createElement('a');
@@ -40,7 +40,7 @@ const Standings = () => {
             </Link>
           </div>
           <div className="text-center">
-            <h1 className="text-4xl font-bold mb-4">Thursday Coed Fall Session</h1>
+            <h1 className="text-4xl font-bold mb-4">Friday Coed Spring Session</h1>
             <p className="text-xl text-green-100">Current Standings & Schedule</p>
           </div>
         </div>
@@ -66,8 +66,8 @@ const Standings = () => {
                          <TableHead>Team</TableHead>
                          <TableHead className="text-center font-semibold">Pts</TableHead>
                          <TableHead className="text-center">W</TableHead>
-                         <TableHead className="text-center">D</TableHead>
                          <TableHead className="text-center">L</TableHead>
+                         <TableHead className="text-center">T</TableHead>
                          <TableHead className="text-center">PS</TableHead>
                          <TableHead className="text-center">PSA</TableHead>
                          <TableHead className="text-center">PSD</TableHead>
@@ -81,8 +81,8 @@ const Standings = () => {
                            <TableCell className="font-semibold">{team.team}</TableCell>
                            <TableCell className="text-center font-bold">{team.points}</TableCell>
                            <TableCell className="text-center">{team.wins}</TableCell>
-                           <TableCell className="text-center">{team.draws}</TableCell>
                            <TableCell className="text-center">{team.losses}</TableCell>
+                           <TableCell className="text-center">{team.draws}</TableCell>
                            <TableCell className="text-center">{team.ps}</TableCell>
                            <TableCell className="text-center">{team.psa}</TableCell>
                            <TableCell className="text-center">{team.psd}</TableCell>
@@ -129,11 +129,11 @@ const Standings = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-gray-800">Games</p>
-                    <p className="text-gray-600">7 game season</p>
+                    <p className="text-gray-600">8 game season</p>
                   </div>
                   <div>
-                    <p className="font-semibold text-gray-800">Day</p>
-                    <p className="text-gray-600">Thursday nights</p>
+                    <p className="font-semibold text-gray-800">Start Date</p>
+                    <p className="text-gray-600">April 3rd</p>
                   </div>
                   <div>
                     <p className="font-semibold text-gray-800">Location</p>
@@ -150,12 +150,12 @@ const Standings = () => {
                  <CardContent className="text-sm space-y-1">
                    <p><strong>GP</strong> - Games Played</p>
                    <p><strong>W</strong> - Wins</p>
-                   <p><strong>D</strong> - Draws</p>
+                   <p><strong>T</strong> - Ties</p>
                    <p><strong>L</strong> - Losses</p>
                    <p><strong>PS</strong> - Points Scored</p>
                    <p><strong>PSA</strong> - Points Scored Against</p>
                    <p><strong>PSD</strong> - Point Differential</p>
-                   <p><strong>Pts</strong> - Points (3 for win, 1 for draw)</p>
+                   <p><strong>Pts</strong> - Points (3 for win, 1 for tie)</p>
                    <div className="mt-3 p-2 bg-green-50 rounded">
                      <p className="text-green-700"><strong>Top 4 teams</strong> highlighted in green</p>
                    </div>
