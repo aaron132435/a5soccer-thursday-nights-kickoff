@@ -134,9 +134,60 @@ const Seasons = () => {
           </div>
         </div>
 
-        <div className="text-center mt-12">
-          <h3 className="text-2xl font-bold text-blue-700 mb-4">Upcoming Sessions</h3>
-          <p className="text-lg text-gray-600">Check back soon for Summer Sessions!</p>
+        <div className="mt-12">
+          <h3 className="text-2xl font-bold text-center text-blue-700 mb-8">Upcoming Sessions</h3>
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <Card className="text-center hover:shadow-lg transition-shadow duration-300 border-blue-200">
+              <CardHeader>
+                <Trophy className="w-16 h-16 text-blue-600 mx-auto mb-4" />
+                <CardTitle className="text-xl text-blue-700">Tuesday Men's Summer Session</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="bg-blue-50 p-4 rounded-lg">
+                  <p className="text-blue-800 font-semibold mb-2">Starts June 16th</p>
+                  <div className="text-blue-700 space-y-1">
+                    <p><strong>Format:</strong> Men's 11v11</p>
+                    <p><strong>Length:</strong> 8 weeks</p>
+                    <p><strong>Location:</strong> Ridge Road Park</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center hover:shadow-lg transition-shadow duration-300 border-blue-200">
+              <CardHeader>
+                <Trophy className="w-16 h-16 text-blue-600 mx-auto mb-4" />
+                <CardTitle className="text-xl text-blue-700">Thursday Coed Summer Session</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="bg-blue-50 p-4 rounded-lg">
+                  <p className="text-blue-800 font-semibold mb-2">Starts June 18th</p>
+                  <div className="text-blue-700 space-y-1">
+                    <p><strong>Format:</strong> Coed 11v11</p>
+                    <p><strong>Length:</strong> 8 weeks</p>
+                    <p><strong>Location:</strong> Ridge Road Park</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center hover:shadow-lg transition-shadow duration-300 border-blue-200">
+              <CardHeader>
+                <Trophy className="w-16 h-16 text-blue-600 mx-auto mb-4" />
+                <CardTitle className="text-xl text-blue-700">Saturday Coed Summer Session</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="bg-blue-50 p-4 rounded-lg">
+                  <p className="text-blue-800 font-semibold mb-2">Starts June 6th</p>
+                  <div className="text-blue-700 space-y-1">
+                    <p><strong>Format:</strong> Coed 11v11</p>
+                    <p><strong>Length:</strong> 8 weeks</p>
+                    <p><strong>Location:</strong> To be Determined</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </div>
     </section>
