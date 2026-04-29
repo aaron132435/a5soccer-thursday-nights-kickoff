@@ -150,6 +150,7 @@ const Seasons = () => {
                     <p><strong>Length:</strong> 8 weeks</p>
                     <p><strong>Location:</strong> Ridge Road Park</p>
                   </div>
+                  <p className="text-sm text-blue-900 font-medium mt-3">Sign up ends June 1st</p>
                 </div>
                 <Button
                   size="lg"
@@ -175,6 +176,7 @@ const Seasons = () => {
                     <p><strong>Length:</strong> 8 weeks</p>
                     <p><strong>Location:</strong> Ridge Road Park</p>
                   </div>
+                  <p className="text-sm text-blue-900 font-medium mt-3">Sign up ends June 1st</p>
                 </div>
                 <Button
                   size="lg"
@@ -200,6 +202,7 @@ const Seasons = () => {
                     <p><strong>Length:</strong> 8 weeks</p>
                     <p><strong>Location:</strong> To be Determined</p>
                   </div>
+                  <p className="text-sm text-blue-900 font-medium mt-3">Sign up ends May 26th</p>
                 </div>
                 <Button
                   size="lg"
