@@ -142,7 +142,7 @@ const Seasons = () => {
                 <Trophy className="w-16 h-16 text-blue-600 mx-auto mb-4" />
                 <CardTitle className="text-xl text-blue-700">Tuesday Men's Summer Session</CardTitle>
               </CardHeader>
-              <CardContent>
+              <CardContent className="space-y-4">
                 <div className="bg-blue-50 p-4 rounded-lg">
                   <p className="text-blue-800 font-semibold mb-2">Starts June 16th</p>
                   <div className="text-blue-700 space-y-1">
@@ -151,6 +151,14 @@ const Seasons = () => {
                     <p><strong>Location:</strong> Ridge Road Park</p>
                   </div>
                 </div>
+                <Button
+                  size="lg"
+                  className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 w-full"
+                  onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSczmKlQKJB_NNkExrBExBnPu2f7kpkvejeoAmEZmoTm2c254A/viewform?usp=dialog", "_blank", "noopener,noreferrer")}
+                >
+                  <ExternalLink className="w-4 h-4 mr-2" />
+                  Sign Up
+                </Button>
               </CardContent>
             </Card>
 
@@ -159,7 +167,7 @@ const Seasons = () => {
                 <Trophy className="w-16 h-16 text-blue-600 mx-auto mb-4" />
                 <CardTitle className="text-xl text-blue-700">Thursday Coed Summer Session</CardTitle>
               </CardHeader>
-              <CardContent>
+              <CardContent className="space-y-4">
                 <div className="bg-blue-50 p-4 rounded-lg">
                   <p className="text-blue-800 font-semibold mb-2">Starts June 18th</p>
                   <div className="text-blue-700 space-y-1">
@@ -168,6 +176,14 @@ const Seasons = () => {
                     <p><strong>Location:</strong> Ridge Road Park</p>
                   </div>
                 </div>
+                <Button
+                  size="lg"
+                  className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 w-full"
+                  onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSczmKlQKJB_NNkExrBExBnPu2f7kpkvejeoAmEZmoTm2c254A/viewform?usp=dialog", "_blank", "noopener,noreferrer")}
+                >
+                  <ExternalLink className="w-4 h-4 mr-2" />
+                  Sign Up
+                </Button>
               </CardContent>
             </Card>
 
@@ -176,7 +192,7 @@ const Seasons = () => {
                 <Trophy className="w-16 h-16 text-blue-600 mx-auto mb-4" />
                 <CardTitle className="text-xl text-blue-700">Saturday Coed Summer Session</CardTitle>
               </CardHeader>
-              <CardContent>
+              <CardContent className="space-y-4">
                 <div className="bg-blue-50 p-4 rounded-lg">
                   <p className="text-blue-800 font-semibold mb-2">Starts June 6th</p>
                   <div className="text-blue-700 space-y-1">
@@ -185,6 +201,14 @@ const Seasons = () => {
                     <p><strong>Location:</strong> To be Determined</p>
                   </div>
                 </div>
+                <Button
+                  size="lg"
+                  className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 w-full"
+                  onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSczmKlQKJB_NNkExrBExBnPu2f7kpkvejeoAmEZmoTm2c254A/viewform?usp=dialog", "_blank", "noopener,noreferrer")}
+                >
+                  <ExternalLink className="w-4 h-4 mr-2" />
+                  Sign Up
+                </Button>
               </CardContent>
             </Card>
           </div>
