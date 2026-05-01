@@ -135,7 +135,8 @@ const Seasons = () => {
         </div>
 
         <div className="mt-12">
-          <h3 className="text-2xl font-bold text-center text-blue-700 mb-8">Upcoming Sessions</h3>
+          <h3 className="text-2xl font-bold text-center text-blue-700 mb-3">Upcoming Sessions</h3>
+          <p className="text-center text-blue-900 font-medium mb-8">Sign up ends June 1st</p>
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <Card className="text-center hover:shadow-lg transition-shadow duration-300 border-blue-200">
               <CardHeader>
@@ -150,7 +151,6 @@ const Seasons = () => {
                     <p><strong>Length:</strong> 8 weeks</p>
                     <p><strong>Location:</strong> Ridge Road Park</p>
                   </div>
-                  <p className="text-sm text-blue-900 font-medium mt-3">Sign up ends June 1st</p>
                 </div>
                 <Button
                   size="lg"
@@ -176,7 +176,6 @@ const Seasons = () => {
                     <p><strong>Length:</strong> 8 weeks</p>
                     <p><strong>Location:</strong> Ridge Road Park</p>
                   </div>
-                  <p className="text-sm text-blue-900 font-medium mt-3">Sign up ends June 1st</p>
                 </div>
                 <Button
                   size="lg"
@@ -196,13 +195,12 @@ const Seasons = () => {
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="bg-blue-50 p-4 rounded-lg">
-                  <p className="text-blue-800 font-semibold mb-2">Starts June 6th</p>
+                  <p className="text-blue-800 font-semibold mb-2">Starts June 13th</p>
                   <div className="text-blue-700 space-y-1">
                     <p><strong>Format:</strong> Coed 11v11</p>
                     <p><strong>Length:</strong> 8 weeks</p>
                     <p><strong>Location:</strong> To be Determined</p>
                   </div>
-                  <p className="text-sm text-blue-900 font-medium mt-3">Sign up ends May 26th</p>
                 </div>
                 <Button
                   size="lg"
