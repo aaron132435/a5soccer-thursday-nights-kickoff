@@ -8,14 +8,14 @@ const TuesdayMensStandings = () => {
   const scheduleUrl = "https://docs.google.com/document/d/1tHCF3MQefo87yojhsNTBVc0yxKHooW1PjKQ6mv0VlkU/edit?usp=sharing";
 
   const rawStandings = [
-    { team: "Blue Lock", points: 6, wins: 2, losses: 1, draws: 0, ps: 10, psa: 5, psd: 5, played: 3 },
-    { team: "The Collective", points: 6, wins: 2, losses: 1, draws: 0, ps: 9, psa: 6, psd: 3, played: 3 },
-    { team: "The Paulers", points: 3, wins: 1, losses: 2, draws: 0, ps: 6, psa: 7, psd: -1, played: 3 },
-    { team: "Los Lobos FC", points: 0, wins: 0, losses: 3, draws: 0, ps: 3, psa: 14, psd: -11, played: 3 },
-    { team: "Piggy Pigs FC", points: 9, wins: 3, losses: 0, draws: 0, ps: 12, psa: 4, psd: 8, played: 3 },
-    { team: "Venator CF", points: 6, wins: 2, losses: 1, draws: 0, ps: 5, psa: 5, psd: 0, played: 3 },
-    { team: "Pikachu FC", points: 0, wins: 0, losses: 3, draws: 0, ps: 2, psa: 9, psd: -7, played: 3 },
-    { team: "Big Dawgs FC", points: 6, wins: 2, losses: 1, draws: 0, ps: 7, psa: 4, psd: 3, played: 3 },
+    { team: "Blue Lock", points: 6, wins: 2, losses: 2, draws: 0, ps: 11, psa: 9, psd: 2, played: 4 },
+    { team: "The Collective", points: 6, wins: 2, losses: 2, draws: 0, ps: 9, psa: 7, psd: 2, played: 4 },
+    { team: "The Paulers", points: 4, wins: 1, losses: 2, draws: 1, ps: 9, psa: 10, psd: -1, played: 4 },
+    { team: "Los Lobos FC", points: 0, wins: 0, losses: 4, draws: 0, ps: 5, psa: 17, psd: -16, played: 4 },
+    { team: "Piggy Pigs FC", points: 10, wins: 3, losses: 0, draws: 1, ps: 15, psa: 7, psd: 8, played: 4 },
+    { team: "Venator CF", points: 9, wins: 3, losses: 1, draws: 0, ps: 6, psa: 5, psd: 1, played: 4 },
+    { team: "Pikachu FC", points: 3, wins: 1, losses: 3, draws: 0, ps: 5, psa: 11, psd: -6, played: 4 },
+    { team: "Big Dawgs FC", points: 9, wins: 3, losses: 1, draws: 0, ps: 11, psa: 5, psd: 6, played: 4 },
   ];
 
   const standings = [...rawStandings]
