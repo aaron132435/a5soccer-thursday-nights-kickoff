@@ -8,14 +8,15 @@ const TuesdayMensStandings = () => {
   const scheduleUrl = "https://docs.google.com/document/d/1tHCF3MQefo87yojhsNTBVc0yxKHooW1PjKQ6mv0VlkU/edit?usp=sharing";
 
   const rawStandings = [
-    { team: "The Collective", points: 10, wins: 3, losses: 2, draws: 1, ps: 12, psa: 8, psd: 4, played: 6 },
-    { team: "Blue Lock", points: 10, wins: 3, losses: 2, draws: 1, ps: 15, psa: 11, psd: 4, played: 6 },
-    { team: "The Paulers", points: 8, wins: 2, losses: 2, draws: 2, ps: 13, psa: 12, psd: 1, played: 6 },
-    { team: "Los Lobos FC", points: 0, wins: 0, losses: 6, draws: 0, ps: 6, psa: 25, psd: -19, played: 6 },
-    { team: "Piggy Pigs FC", points: 16, wins: 5, losses: 0, draws: 1, ps: 21, psa: 8, psd: 13, played: 6 },
-    { team: "Venator CF", points: 10, wins: 3, losses: 2, draws: 1, ps: 8, psa: 9, psd: -1, played: 6 },
-    { team: "Pikachu FC", points: 3, wins: 1, losses: 5, draws: 0, ps: 6, psa: 17, psd: -11, played: 6 },
-    { team: "Big Dawgs FC", points: 12, wins: 4, losses: 2, draws: 0, ps: 16, psa: 7, psd: 9, played: 6 },
+    { team: "Blue Lock", points: 3, wins: 1, losses: 0, draws: 0, ps: 5, psa: 3, psd: 2, played: 2 },
+    { team: "The Collective", points: 3, wins: 1, losses: 0, draws: 0, ps: 2, psa: 1, psd: 1, played: 1 },
+    { team: "The Paulers", points: 6, wins: 2, losses: 0, draws: 0, ps: 4, psa: 2, psd: 2, played: 2 },
+    { team: "Los Lobos FC", points: 0, wins: 0, losses: 2, draws: 0, ps: 1, psa: 4, psd: -3, played: 2 },
+    { team: "Phantom XI", points: 3, wins: 1, losses: 1, draws: 0, ps: 6, psa: 8, psd: -2, played: 2 },
+    { team: "Venator CF", points: 3, wins: 1, losses: 0, draws: 0, ps: 3, psa: 1, psd: 2, played: 1 },
+    { team: "M.W.F.C", points: 6, wins: 2, losses: 0, draws: 0, ps: 6, psa: 1, psd: 5, played: 2 },
+    { team: "Big Dawgs FC", points: 0, wins: 0, losses: 2, draws: 0, ps: 1, psa: 4, psd: -3, played: 2 },
+    { team: "Lions United", points: 0, wins: 0, losses: 2, draws: 0, ps: 4, psa: 8, psd: -4, played: 2 },
   ];
 
   const standings = [...rawStandings]
