@@ -66,7 +66,7 @@ const Seasons = () => {
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="bg-green-50 p-4 rounded-lg">
-                  <p className="text-green-800 font-semibold mb-2">Started April 7th</p>
+                  <p className="text-green-800 font-semibold mb-2">Started June 25th</p>
                   <div className="text-green-700 space-y-1">
                     <p><strong>Format:</strong> Men's 11v11</p>
                     <p><strong>Location:</strong> Ridge Road Park</p>
