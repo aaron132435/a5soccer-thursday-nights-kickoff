@@ -18,18 +18,18 @@ const Seasons = () => {
 
         <div className="mb-12">
           <h3 className="text-2xl font-bold text-center text-green-700 mb-8">Current Seasons</h3>
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             <Card className="text-center hover:shadow-lg transition-shadow duration-300 border-green-200">
               <CardHeader>
                 <Trophy className="w-16 h-16 text-green-600 mx-auto mb-4" />
-                <CardTitle className="text-xl text-green-700">Friday Coed Spring Session</CardTitle>
+                <CardTitle className="text-xl text-green-700">Friday Coed Summer Session</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="bg-green-50 p-4 rounded-lg">
                   <p className="text-green-800 font-semibold mb-2">Started April 3rd</p>
                   <div className="text-green-700 space-y-1">
                     <p><strong>Format:</strong> Coed 11v11</p>
-                    <p><strong>Location:</strong> Laytonia Park</p>
+                    <p><strong>Location:</strong> Ridge Road Park</p>
                   </div>
                 </div>
 
@@ -62,14 +62,14 @@ const Seasons = () => {
             <Card className="text-center hover:shadow-lg transition-shadow duration-300 border-green-200">
               <CardHeader>
                 <Trophy className="w-16 h-16 text-green-600 mx-auto mb-4" />
-                <CardTitle className="text-xl text-green-700">Tuesday Men's Spring Session</CardTitle>
+                <CardTitle className="text-xl text-green-700">Tuesday Men's Summer Session</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="bg-green-50 p-4 rounded-lg">
                   <p className="text-green-800 font-semibold mb-2">Started April 7th</p>
                   <div className="text-green-700 space-y-1">
                     <p><strong>Format:</strong> Men's 11v11</p>
-                    <p><strong>Location:</strong> Laytonia Park</p>
+                    <p><strong>Location:</strong> Ridge Road Park</p>
                   </div>
                 </div>
 
@@ -87,46 +87,6 @@ const Seasons = () => {
                   >
                     <ExternalLink className="w-4 h-4 mr-2" />
                     Open Schedule
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="text-center hover:shadow-lg transition-shadow duration-300 border-green-200">
-              <CardHeader>
-                <Trophy className="w-16 h-16 text-green-600 mx-auto mb-4" />
-                <CardTitle className="text-xl text-green-700">Saturday Coed Spring Session</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <div className="bg-green-50 p-4 rounded-lg">
-                  <p className="text-green-800 font-semibold mb-2">Started April 4th</p>
-                  <div className="text-green-700 space-y-1">
-                    <p><strong>Format:</strong> Coed 11v11</p>
-                    <p><strong>Location:</strong> Germantown</p>
-                  </div>
-                </div>
-
-                <div className="flex flex-col gap-3">
-                  <Link to="/saturday-coed-standings">
-                    <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 w-full">
-                      View Current Standings
-                    </Button>
-                  </Link>
-
-                  <Button
-                    size="lg"
-                    className="bg-green-600 hover:bg-green-700 text-white px-6 py-3"
-                    onClick={() => {
-                      const link = document.createElement("a");
-                      link.href = "/saturday-schedule.pdf";
-                      link.download = "Saturday-Coed-Schedule.pdf";
-                      document.body.appendChild(link);
-                      link.click();
-                      document.body.removeChild(link);
-                    }}
-                  >
-                    <Download className="w-4 h-4 mr-2" />
-                    Download Schedule
                   </Button>
                 </div>
               </CardContent>
