@@ -101,15 +101,15 @@ const Seasons = () => {
             <Card className="text-center hover:shadow-lg transition-shadow duration-300 border-blue-200">
               <CardHeader>
                 <Trophy className="w-16 h-16 text-blue-600 mx-auto mb-4" />
-                <CardTitle className="text-xl text-blue-700">Tuesday Men's Summer Session</CardTitle>
+                <CardTitle className="text-xl text-blue-700">Tuesday Men's Fall Session</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="bg-blue-50 p-4 rounded-lg">
-                  <p className="text-blue-800 font-semibold mb-2">Starts June 16th</p>
+                  <p className="text-blue-800 font-semibold mb-2">Starts September 1st</p>
                   <div className="text-blue-700 space-y-1">
                     <p><strong>Format:</strong> Men's 11v11</p>
                     <p><strong>Length:</strong> 8 weeks</p>
-                    <p><strong>Location:</strong> Ridge Road Park</p>
+                    <p><strong>Location:</strong> TBD</p>
                   </div>
                 </div>
                 <Button
@@ -126,15 +126,15 @@ const Seasons = () => {
             <Card className="text-center hover:shadow-lg transition-shadow duration-300 border-blue-200">
               <CardHeader>
                 <Trophy className="w-16 h-16 text-blue-600 mx-auto mb-4" />
-                <CardTitle className="text-xl text-blue-700">Thursday Coed Summer Session</CardTitle>
+                <CardTitle className="text-xl text-blue-700">Thursday Coed Fall Session</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="bg-blue-50 p-4 rounded-lg">
-                  <p className="text-blue-800 font-semibold mb-2">Starts June 18th</p>
+                  <p className="text-blue-800 font-semibold mb-2">Starts September 3rd</p>
                   <div className="text-blue-700 space-y-1">
                     <p><strong>Format:</strong> Coed 11v11</p>
                     <p><strong>Length:</strong> 8 weeks</p>
-                    <p><strong>Location:</strong> Ridge Road Park</p>
+                    <p><strong>Location:</strong> TBD</p>
                   </div>
                 </div>
                 <Button
@@ -151,15 +151,15 @@ const Seasons = () => {
             <Card className="text-center hover:shadow-lg transition-shadow duration-300 border-blue-200">
               <CardHeader>
                 <Trophy className="w-16 h-16 text-blue-600 mx-auto mb-4" />
-                <CardTitle className="text-xl text-blue-700">Saturday Coed Summer Session</CardTitle>
+                <CardTitle className="text-xl text-blue-700">Saturday Coed Fall Session</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="bg-blue-50 p-4 rounded-lg">
-                  <p className="text-blue-800 font-semibold mb-2">Starts June 13th</p>
+                  <p className="text-blue-800 font-semibold mb-2">Starts September 12th</p>
                   <div className="text-blue-700 space-y-1">
                     <p><strong>Format:</strong> Coed 11v11</p>
                     <p><strong>Length:</strong> 8 weeks</p>
-                    <p><strong>Location:</strong> To be Determined</p>
+                    <p><strong>Location:</strong> TBD</p>
                   </div>
                 </div>
                 <Button
