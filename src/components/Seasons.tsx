@@ -96,7 +96,7 @@ const Seasons = () => {
 
         <div className="mt-12">
           <h3 className="text-2xl font-bold text-center text-blue-700 mb-3">Upcoming Sessions</h3>
-          <p className="text-center text-blue-900 font-medium mb-8">Sign up ends June 2nd</p>
+          <p className="text-center text-blue-900 font-medium mb-8">Sign up ends August 15th</p>
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <Card className="text-center hover:shadow-lg transition-shadow duration-300 border-blue-200">
               <CardHeader>
