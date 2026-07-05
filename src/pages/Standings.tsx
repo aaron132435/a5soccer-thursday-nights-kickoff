@@ -5,7 +5,7 @@ import { Download, ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Standings = () => {
-  // Current standings data - Thursday Coed Spring Session
+  // Current standings data - Thursday Coed Summer Session
   const rawStandings = [
     { team: "Germantown Impact", points: 6, wins: 2, losses: 0, draws: 0, ps: 9, psa: 2, psd: 7, played: 2 },
     { team: "Blue Lock", points: 3, wins: 1, losses: 1, draws: 0, ps: 6, psa: 3, psd: 3, played: 2 },
@@ -44,7 +44,7 @@ const Standings = () => {
             </Link>
           </div>
           <div className="text-center">
-            <h1 className="text-4xl font-bold mb-4">Thursday Coed Spring Session</h1>
+            <h1 className="text-4xl font-bold mb-4">Thursday Coed Summer Session</h1>
             <p className="text-xl text-green-100">Current Standings & Schedule</p>
           </div>
         </div>
@@ -137,11 +137,11 @@ const Standings = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-gray-800">Start Date</p>
-                    <p className="text-gray-600">April 3rd</p>
+                    <p className="text-gray-600">June 25th</p>
                   </div>
                   <div>
                     <p className="font-semibold text-gray-800">Location</p>
-                    <p className="text-gray-600">Laytonia Park<br />Gaithersburg, Maryland</p>
+                    <p className="text-gray-600">Ridge Road Park<br />Germantown, Maryland</p>
                   </div>
                 </CardContent>
               </Card>
