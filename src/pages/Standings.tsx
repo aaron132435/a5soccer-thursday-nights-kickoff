@@ -44,7 +44,7 @@ const Standings = () => {
             </Link>
           </div>
           <div className="text-center">
-            <h1 className="text-4xl font-bold mb-4">Friday Coed Spring Session</h1>
+            <h1 className="text-4xl font-bold mb-4">Thursday Coed Spring Session</h1>
             <p className="text-xl text-green-100">Current Standings & Schedule</p>
           </div>
         </div>
