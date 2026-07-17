@@ -11,11 +11,11 @@ const TuesdayMensStandings = () => {
     { team: "Blue Lock", points: 3, wins: 1, losses: 2, draws: 0, ps: 5, psa: 5, psd: 0, played: 3 },
     { team: "The Collective", points: 4, wins: 1, losses: 1, draws: 1, ps: 4, psa: 5, psd: -1, played: 3 },
     { team: "The Paulers", points: 9, wins: 3, losses: 1, draws: 0, ps: 6, psa: 4, psd: 2, played: 4 },
-    { team: "Los Lobos FC", points: 0, wins: 0, losses: 3, draws: 0, ps: 2, psa: 10, psd: -8, played: 3 },
+    { team: "Los Lobos FC", points: 3, wins: 1, losses: 3, draws: 0, ps: 3, psa: 10, psd: -7, played: 4 },
     { team: "Phantom XI", points: 9, wins: 3, losses: 1, draws: 0, ps: 11, psa: 9, psd: 2, played: 4 },
     { team: "Venator CF", points: 4, wins: 1, losses: 1, draws: 1, ps: 5, psa: 4, psd: 1, played: 3 },
     { team: "M.W.F.C", points: 12, wins: 4, losses: 0, draws: 0, ps: 14, psa: 3, psd: 11, played: 4 },
-    { team: "Big Dawgs FC", points: 3, wins: 1, losses: 2, draws: 0, ps: 3, psa: 4, psd: -1, played: 3 },
+    { team: "Big Dawgs FC", points: 3, wins: 1, losses: 3, draws: 0, ps: 3, psa: 5, psd: -2, played: 3 },
     { team: "Lions United", points: 0, wins: 0, losses: 3, draws: 0, ps: 4, psa: 10, psd: -6, played: 3 },
   ];
 
