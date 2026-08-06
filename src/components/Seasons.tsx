@@ -96,7 +96,7 @@ const Seasons = () => {
 
         <div className="mt-12">
           <h3 className="text-2xl font-bold text-center text-blue-700 mb-3">Upcoming Sessions</h3>
-          <p className="text-center text-blue-900 font-medium mb-8">Sign up ends August 15th</p>
+          <p className="text-center text-blue-900 font-medium mb-8">Sign up ends September 1st</p>
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <Card className="text-center hover:shadow-lg transition-shadow duration-300 border-blue-200">
               <CardHeader>
@@ -105,7 +105,7 @@ const Seasons = () => {
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="bg-blue-50 p-4 rounded-lg">
-                  <p className="text-blue-800 font-semibold mb-2">Starts September 1st</p>
+                  <p className="text-blue-800 font-semibold mb-2">Starts September 15th</p>
                   <div className="text-blue-700 space-y-1">
                     <p><strong>Format:</strong> Men's 11v11</p>
                     <p><strong>Length:</strong> 8 weeks</p>
@@ -130,7 +130,7 @@ const Seasons = () => {
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="bg-blue-50 p-4 rounded-lg">
-                  <p className="text-blue-800 font-semibold mb-2">Starts September 3rd</p>
+                  <p className="text-blue-800 font-semibold mb-2">Starts September 17th</p>
                   <div className="text-blue-700 space-y-1">
                     <p><strong>Format:</strong> Coed 11v11</p>
                     <p><strong>Length:</strong> 8 weeks</p>
