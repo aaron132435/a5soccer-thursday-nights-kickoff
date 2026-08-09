@@ -7,14 +7,14 @@ import { Link } from "react-router-dom";
 const Standings = () => {
   // Current standings data - Thursday Coed Summer Session
   const rawStandings = [
-    { team: "Germantown Impact", points: 13, wins: 4, losses: 0, draws: 1, ps: 20, psa: 5, psd: 15, played: 5 },
-    { team: "Blue Lock", points: 7, wins: 2, losses: 2, draws: 1, ps: 17, psa: 11, psd: 6, played: 5 },
-    { team: "The Paulers", points: 9, wins: 3, losses: 2, draws: 0, ps: 16, psa: 9, psd: 7, played: 5 },
+    { team: "Germantown Impact", points: 14, wins: 4, losses: 0, draws: 2, ps: 24, psa: 9, psd: 15, played: 6 },
+    { team: "Blue Lock", points: 7, wins: 2, losses: 3, draws: 1, ps: 18, psa: 15, psd: 3, played: 6 },
+    { team: "The Paulers", points: 12, wins: 4, losses: 2, draws: 0, ps: 20, psa: 10, psd: 10, played: 6 },
     { team: "Golden Parachutes", points: 4, wins: 1, losses: 3, draws: 1, ps: 9, psa: 13, psd: -4, played: 5 },
-    { team: "Rising Sun", points: 6, wins: 2, losses: 3, draws: 0, ps: 4, psa: 13, psd: -9, played: 5 },
+    { team: "Rising Sun", points: 9, wins: 3, losses: 3, draws: 0, ps: 8, psa: 13, psd: -5, played: 6 },
     { team: "Real United FC", points: 7, wins: 2, losses: 2, draws: 1, ps: 5, psa: 13, psd: -8, played: 5 },
-    { team: "Golden Age", points: 4, wins: 1, losses: 2, draws: 1, ps: 4, psa: 11, psd: -7, played: 4 },
-    { team: "Sporting Copa", points: 4, wins: 1, losses: 2, draws: 1, ps: 6, psa: 7, psd: -1, played: 4 },
+    { team: "Golden Age", points: 4, wins: 1, losses: 3, draws: 1, ps: 4, psa: 15, psd: -11, played: 5 },
+    { team: "Sporting Copa", points: 5, wins: 1, losses: 2, draws: 2, ps: 7, psa: 8, psd: -1, played: 5 },
   ];
 
   const standings = [...rawStandings]
