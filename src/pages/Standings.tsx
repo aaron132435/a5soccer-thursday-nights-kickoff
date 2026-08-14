@@ -10,11 +10,12 @@ const Standings = () => {
     { team: "Germantown Impact", points: 14, wins: 4, losses: 0, draws: 2, ps: 24, psa: 9, psd: 15, played: 6 },
     { team: "Blue Lock", points: 7, wins: 2, losses: 3, draws: 1, ps: 18, psa: 15, psd: 3, played: 6 },
     { team: "The Paulers", points: 12, wins: 4, losses: 2, draws: 0, ps: 20, psa: 10, psd: 10, played: 6 },
-    { team: "Golden Parachutes", points: 4, wins: 1, losses: 3, draws: 1, ps: 9, psa: 13, psd: -4, played: 5 },
+    { team: "Golden Parachutes", points: 4, wins: 1, losses: 4, draws: 1, ps: 13, psa: 18, psd: -5, played: 6 },
     { team: "Rising Sun", points: 9, wins: 3, losses: 3, draws: 0, ps: 8, psa: 13, psd: -5, played: 6 },
-    { team: "Real United FC", points: 7, wins: 2, losses: 2, draws: 1, ps: 5, psa: 13, psd: -8, played: 5 },
-    { team: "Golden Age", points: 4, wins: 1, losses: 3, draws: 1, ps: 4, psa: 15, psd: -11, played: 5 },
-    { team: "Sporting Copa", points: 5, wins: 1, losses: 2, draws: 2, ps: 7, psa: 8, psd: -1, played: 5 },
+    { team: "Real United FC", points: 10, wins: 3, losses: 2, draws: 1, ps: 10, psa: 17, psd: -7, played: 6 },
+    { team: "Golden Age", points: 4, wins: 1, losses: 4, draws: 1, ps: 5, psa: 19, psd: -14, played: 6 },
+    { team: "Sporting Copa", points: 8, wins: 2, losses: 2, draws: 2, ps: 11, psa: 9, psd: 2, played: 6 },
+
   ];
 
   const standings = [...rawStandings]
