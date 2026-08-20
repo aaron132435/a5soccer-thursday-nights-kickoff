@@ -8,10 +8,10 @@ const TuesdayMensStandings = () => {
   const scheduleUrl = "https://docs.google.com/document/d/1tHCF3MQefo87yojhsNTBVc0yxKHooW1PjKQ6mv0VlkU/edit?usp=sharing";
 
   const rawStandings = [
-    { team: "Blue Lock", points: 9, wins: 3, losses: 2, draws: 0, ps: 9, psa: 7, psd: 2, played: 5 },
+    { team: "Blue Lock", points: 10, wins: 3, losses: 2, draws: 1, ps: 10, psa: 8, psd: 2, played: 6 },
     { team: "The Collective", points: 10, wins: 3, losses: 2, draws: 1, ps: 17, psa: 16, psd: 1, played: 6 },
     { team: "The Paulers", points: 12, wins: 4, losses: 2, draws: 0, ps: 11, psa: 9, psd: 2, played: 6 },
-    { team: "Los Lobos FC", points: 3, wins: 1, losses: 4, draws: 0, ps: 3, psa: 12, psd: -9, played: 5 },
+    { team: "Los Lobos FC", points: 4, wins: 1, losses: 4, draws: 1, ps: 6, psa: 15, psd: -9, played: 6 },
     { team: "Phantom XI", points: 12, wins: 4, losses: 2, draws: 0, ps: 14, psa: 11, psd: 3, played: 6 },
     { team: "Venator CF", points: 4, wins: 1, losses: 3, draws: 1, ps: 7, psa: 8, psd: -1, played: 5 },
     { team: "M.W.F.C", points: 18, wins: 6, losses: 0, draws: 0, ps: 26, psa: 4, psd: 22, played: 6 },
