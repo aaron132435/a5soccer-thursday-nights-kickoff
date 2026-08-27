@@ -134,7 +134,7 @@ const Seasons = () => {
                   <div className="text-blue-700 space-y-1">
                     <p><strong>Format:</strong> Coed 11v11</p>
                     <p><strong>Length:</strong> 8 weeks</p>
-                    <p><strong>Location:</strong> TBD</p>
+                    <p><strong>Location:</strong> Ridge Road Park</p>
                   </div>
                 </div>
                 <Button
@@ -155,11 +155,11 @@ const Seasons = () => {
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="bg-blue-50 p-4 rounded-lg">
-                  <p className="text-blue-800 font-semibold mb-2">Starts September 12th</p>
+                  <p className="text-blue-800 font-semibold mb-2">Starts September 26th</p>
                   <div className="text-blue-700 space-y-1">
                     <p><strong>Format:</strong> Coed 11v11</p>
                     <p><strong>Length:</strong> 8 weeks</p>
-                    <p><strong>Location:</strong> TBD</p>
+                    <p><strong>Location:</strong> Germantown</p>
                   </div>
                 </div>
                 <Button
