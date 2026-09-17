@@ -69,7 +69,7 @@ const Seasons = () => {
                   <p className="text-green-800 font-semibold mb-2">Started September 15th</p>
                   <div className="text-green-700 space-y-1">
                     <p><strong>Format:</strong> Men's 11v11</p>
-                    <p><strong>Location:</strong> Ridge Road Park</p>
+                    <p><strong>Location:</strong> Gaithersburg/Germantown</p>
                   </div>
                 </div>
 

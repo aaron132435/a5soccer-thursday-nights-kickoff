@@ -123,7 +123,7 @@ const TuesdayMensStandings = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-gray-800">Location</p>
-                    <p className="text-gray-600">Ridge Road Park</p>
+                    <p className="text-gray-600">Gaithersburg/Germantown</p>
                   </div>
                 </CardContent>
               </Card>
