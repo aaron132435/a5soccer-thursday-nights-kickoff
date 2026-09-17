@@ -8,15 +8,15 @@ const TuesdayMensStandings = () => {
   const scheduleUrl = "https://docs.google.com/document/d/1tHCF3MQefo87yojhsNTBVc0yxKHooW1PjKQ6mv0VlkU/edit?usp=sharing";
 
   const rawStandings = [
-    { team: "Blue Lock", points: 10, wins: 3, losses: 2, draws: 1, ps: 10, psa: 8, psd: 2, played: 6 },
-    { team: "The Collective", points: 10, wins: 3, losses: 2, draws: 1, ps: 17, psa: 16, psd: 1, played: 6 },
-    { team: "The Paulers", points: 12, wins: 4, losses: 2, draws: 0, ps: 11, psa: 9, psd: 2, played: 6 },
-    { team: "Los Lobos FC", points: 4, wins: 1, losses: 4, draws: 1, ps: 6, psa: 15, psd: -9, played: 6 },
-    { team: "Phantom XI", points: 12, wins: 4, losses: 2, draws: 0, ps: 14, psa: 11, psd: 3, played: 6 },
-    { team: "Venator CF", points: 4, wins: 1, losses: 3, draws: 1, ps: 7, psa: 8, psd: -1, played: 5 },
-    { team: "M.W.F.C", points: 18, wins: 6, losses: 0, draws: 0, ps: 26, psa: 4, psd: 22, played: 6 },
-    { team: "Big Dawgs FC", points: 6, wins: 2, losses: 4, draws: 0, ps: 5, psa: 8, psd: -3, played: 6 },
-    { team: "Lions United", points: 0, wins: 0, losses: 5, draws: 0, ps: 6, psa: 24, psd: -18, played: 5 },
+    { team: "Blue Lock", points: 0, wins: 0, losses: 0, draws: 0, ps: 0, psa: 0, psd: 0, played: 0 },
+    { team: "The Collective", points: 0, wins: 0, losses: 1, draws: 0, ps: 1, psa: 4, psd: -3, played: 1 },
+    { team: "The Paulers", points: 3, wins: 1, losses: 0, draws: 0, ps: 4, psa: 2, psd: 2, played: 1 },
+    { team: "Piggy Pigs FC", points: 3, wins: 1, losses: 0, draws: 0, ps: 4, psa: 1, psd: 3, played: 1 },
+    { team: "Phantom XI", points: 0, wins: 0, losses: 0, draws: 0, ps: 0, psa: 0, psd: 0, played: 0 },
+    { team: "Venator CF", points: 0, wins: 0, losses: 0, draws: 0, ps: 0, psa: 0, psd: 0, played: 0 },
+    { team: "Real CF Lyons", points: 1, wins: 0, losses: 0, draws: 1, ps: 2, psa: 2, psd: 0, played: 1 },
+    { team: "Big Dawgs FC", points: 1, wins: 0, losses: 0, draws: 1, ps: 2, psa: 2, psd: 0, played: 1 },
+    { team: "Lions United", points: 0, wins: 0, losses: 1, draws: 0, ps: 2, psa: 4, psd: -2, played: 1 },
   ];
 
   const standings = [...rawStandings]
