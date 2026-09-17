@@ -138,7 +138,7 @@ const Standings = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-gray-800">Start Date</p>
-                    <p className="text-gray-600">June 25th</p>
+                    <p className="text-gray-600">September 17th</p>
                   </div>
                   <div>
                     <p className="font-semibold text-gray-800">Location</p>
