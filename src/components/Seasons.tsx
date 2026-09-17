@@ -95,81 +95,13 @@ const Seasons = () => {
         </div>
 
         <div className="mt-12">
-          <h3 className="text-2xl font-bold text-center text-blue-700 mb-3">Upcoming Sessions</h3>
-          <p className="text-center text-blue-900 font-medium mb-8">Sign up ends September 1st</p>
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <Card className="text-center hover:shadow-lg transition-shadow duration-300 border-blue-200">
-              <CardHeader>
+          <h3 className="text-2xl font-bold text-center text-blue-700 mb-8">Upcoming Sessions</h3>
+          <div className="max-w-2xl mx-auto text-center">
+            <Card className="border-blue-200">
+              <CardContent className="py-12">
                 <Trophy className="w-16 h-16 text-blue-600 mx-auto mb-4" />
-                <CardTitle className="text-xl text-blue-700">Tuesday Men's Fall Session</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <div className="bg-blue-50 p-4 rounded-lg">
-                  <p className="text-blue-800 font-semibold mb-2">Starts September 15th</p>
-                  <div className="text-blue-700 space-y-1">
-                    <p><strong>Format:</strong> Men's 11v11</p>
-                    <p><strong>Length:</strong> 8 weeks</p>
-                    <p><strong>Location:</strong> TBD</p>
-                  </div>
-                </div>
-                <Button
-                  size="lg"
-                  className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 w-full"
-                  onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSczmKlQKJB_NNkExrBExBnPu2f7kpkvejeoAmEZmoTm2c254A/viewform?usp=dialog", "_blank", "noopener,noreferrer")}
-                >
-                  <ExternalLink className="w-4 h-4 mr-2" />
-                  Sign Up
-                </Button>
-              </CardContent>
-            </Card>
-
-            <Card className="text-center hover:shadow-lg transition-shadow duration-300 border-blue-200">
-              <CardHeader>
-                <Trophy className="w-16 h-16 text-blue-600 mx-auto mb-4" />
-                <CardTitle className="text-xl text-blue-700">Thursday Coed Fall Session</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <div className="bg-blue-50 p-4 rounded-lg">
-                  <p className="text-blue-800 font-semibold mb-2">Starts September 17th</p>
-                  <div className="text-blue-700 space-y-1">
-                    <p><strong>Format:</strong> Coed 11v11</p>
-                    <p><strong>Length:</strong> 8 weeks</p>
-                    <p><strong>Location:</strong> Ridge Road Park</p>
-                  </div>
-                </div>
-                <Button
-                  size="lg"
-                  className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 w-full"
-                  onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSczmKlQKJB_NNkExrBExBnPu2f7kpkvejeoAmEZmoTm2c254A/viewform?usp=dialog", "_blank", "noopener,noreferrer")}
-                >
-                  <ExternalLink className="w-4 h-4 mr-2" />
-                  Sign Up
-                </Button>
-              </CardContent>
-            </Card>
-
-            <Card className="text-center hover:shadow-lg transition-shadow duration-300 border-blue-200">
-              <CardHeader>
-                <Trophy className="w-16 h-16 text-blue-600 mx-auto mb-4" />
-                <CardTitle className="text-xl text-blue-700">Saturday Coed Fall Session</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <div className="bg-blue-50 p-4 rounded-lg">
-                  <p className="text-blue-800 font-semibold mb-2">Starts September 26th</p>
-                  <div className="text-blue-700 space-y-1">
-                    <p><strong>Format:</strong> Coed 11v11</p>
-                    <p><strong>Length:</strong> 8 weeks</p>
-                    <p><strong>Location:</strong> Germantown</p>
-                  </div>
-                </div>
-                <Button
-                  size="lg"
-                  className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 w-full"
-                  onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSczmKlQKJB_NNkExrBExBnPu2f7kpkvejeoAmEZmoTm2c254A/viewform?usp=dialog", "_blank", "noopener,noreferrer")}
-                >
-                  <ExternalLink className="w-4 h-4 mr-2" />
-                  Sign Up
-                </Button>
+                <p className="text-2xl font-bold text-blue-800">To be announced</p>
+                <p className="text-gray-600 mt-2">Check back soon for upcoming season details!</p>
               </CardContent>
             </Card>
           </div>
