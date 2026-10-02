@@ -8,15 +8,15 @@ const TuesdayMensStandings = () => {
   const scheduleUrl = "https://docs.google.com/document/d/1tHCF3MQefo87yojhsNTBVc0yxKHooW1PjKQ6mv0VlkU/edit?usp=sharing";
 
   const rawStandings = [
-    { team: "Blue Lock", points: 0, wins: 0, losses: 0, draws: 0, ps: 0, psa: 0, psd: 0, played: 0 },
+    { team: "The Paulers", points: 6, wins: 2, losses: 0, draws: 0, ps: 10, psa: 3, psd: 7, played: 2 },
+    { team: "Piggy Pigs FC", points: 6, wins: 2, losses: 0, draws: 0, ps: 8, psa: 3, psd: 5, played: 2 },
+    { team: "Real CF Lyons", points: 4, wins: 1, losses: 0, draws: 1, ps: 6, psa: 2, psd: 4, played: 2 },
+    { team: "Big Dawgs FC", points: 4, wins: 1, losses: 0, draws: 1, ps: 4, psa: 2, psd: 2, played: 2 },
+    { team: "Blue Lock", points: 0, wins: 0, losses: 1, draws: 0, ps: 2, psa: 4, psd: -2, played: 1 },
     { team: "The Collective", points: 0, wins: 0, losses: 1, draws: 0, ps: 1, psa: 4, psd: -3, played: 1 },
-    { team: "The Paulers", points: 3, wins: 1, losses: 0, draws: 0, ps: 4, psa: 2, psd: 2, played: 1 },
-    { team: "Piggy Pigs FC", points: 3, wins: 1, losses: 0, draws: 0, ps: 4, psa: 1, psd: 3, played: 1 },
-    { team: "Phantom XI", points: 0, wins: 0, losses: 0, draws: 0, ps: 0, psa: 0, psd: 0, played: 0 },
-    { team: "Venator CF", points: 0, wins: 0, losses: 0, draws: 0, ps: 0, psa: 0, psd: 0, played: 0 },
-    { team: "Real CF Lyons", points: 1, wins: 0, losses: 0, draws: 1, ps: 2, psa: 2, psd: 0, played: 1 },
-    { team: "Big Dawgs FC", points: 1, wins: 0, losses: 0, draws: 1, ps: 2, psa: 2, psd: 0, played: 1 },
-    { team: "Lions United", points: 0, wins: 0, losses: 1, draws: 0, ps: 2, psa: 4, psd: -2, played: 1 },
+    { team: "Venator CF", points: 0, wins: 0, losses: 1, draws: 0, ps: 0, psa: 4, psd: -4, played: 1 },
+    { team: "Lions United", points: 0, wins: 0, losses: 2, draws: 0, ps: 2, psa: 6, psd: -4, played: 2 },
+    { team: "Phantom XI", points: 0, wins: 0, losses: 1, draws: 0, ps: 1, psa: 6, psd: -5, played: 1 },
   ];
 
   const standings = [...rawStandings]
