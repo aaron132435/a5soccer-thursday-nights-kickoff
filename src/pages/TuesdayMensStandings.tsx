@@ -13,7 +13,7 @@ const TuesdayMensStandings = () => {
     { team: "The Paulers", points: 6, wins: 2, losses: 1, draws: 0, ps: 10, psa: 10, psd: 0, played: 3 },
     { team: "Real CF Lyons", points: 4, wins: 1, losses: 0, draws: 1, ps: 6, psa: 2, psd: 4, played: 2 },
     { team: "Venator CF", points: 3, wins: 1, losses: 1, draws: 0, ps: 6, psa: 6, psd: 0, played: 2 },
-    { team: "The Collective", points: 3, wins: 1, losses: 1, draws: 0, ps: 4, psa: 7, psd: -2, played: 2 },
+    { team: "The Collective", points: 3, wins: 1, losses: 1, draws: 0, ps: 5, psa: 7, psd: -2, played: 2 },
     { team: "Blue Lock", points: 0, wins: 0, losses: 2, draws: 0, ps: 5, psa: 8, psd: -3, played: 2 },
     { team: "Lions United", points: 0, wins: 0, losses: 3, draws: 0, ps: 4, psa: 12, psd: -8, played: 3 },
     { team: "Phantom XI", points: 0, wins: 0, losses: 2, draws: 0, ps: 3, psa: 11, psd: -8, played: 2 },
