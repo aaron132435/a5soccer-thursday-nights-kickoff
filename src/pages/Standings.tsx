@@ -5,7 +5,7 @@ import { Download, ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Standings = () => {
-  // Current standings data - Thursday Coed Fall Session
+  // Current standings data - Friday Coed Fall Session
   const rawStandings = [
     { team: "Blue Lock", points: 3, wins: 1, losses: 0, draws: 0, ps: 4, psa: 0, psd: 4, played: 1 },
     { team: "The Paulers", points: 3, wins: 1, losses: 0, draws: 0, ps: 3, psa: 0, psd: 3, played: 1 },
@@ -22,7 +22,7 @@ const Standings = () => {
   const handleDownloadSchedule = () => {
     const link = document.createElement('a');
     link.href = '/schedule.pdf';
-    link.download = 'Thursday-Coed-Schedule.pdf';
+    link.download = 'Friday-Coed-Schedule.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -42,7 +42,7 @@ const Standings = () => {
             </Link>
           </div>
           <div className="text-center">
-            <h1 className="text-4xl font-bold mb-4">Thursday Coed Fall Session</h1>
+            <h1 className="text-4xl font-bold mb-4">Friday Coed Fall Session</h1>
             <p className="text-xl text-green-100">Current Standings & Schedule</p>
           </div>
         </div>
@@ -139,7 +139,7 @@ const Standings = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-gray-800">Location</p>
-                    <p className="text-gray-600">Ridge Road Park<br />Germantown, Maryland</p>
+                    <p className="text-gray-600">Laytonia Park</p>
                   </div>
                 </CardContent>
               </Card>

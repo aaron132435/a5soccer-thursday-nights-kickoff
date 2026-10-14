@@ -22,14 +22,14 @@ const Seasons = () => {
             <Card className="text-center hover:shadow-lg transition-shadow duration-300 border-green-200">
               <CardHeader>
                 <Trophy className="w-16 h-16 text-green-600 mx-auto mb-4" />
-                <CardTitle className="text-xl text-green-700">Thursday Coed Fall Session</CardTitle>
+                <CardTitle className="text-xl text-green-700">Friday Coed Fall Session</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="bg-green-50 p-4 rounded-lg">
                   <p className="text-green-800 font-semibold mb-2">Started September 17th</p>
                   <div className="text-green-700 space-y-1">
                     <p><strong>Format:</strong> Coed 11v11</p>
-                    <p><strong>Location:</strong> Ridge Road Park</p>
+                    <p><strong>Location:</strong> Laytonia Park</p>
                   </div>
                 </div>
 
@@ -46,7 +46,7 @@ const Seasons = () => {
                     onClick={() => {
                       const link = document.createElement("a");
                       link.href = "/schedule.pdf";
-                      link.download = "Thursday-Coed-Schedule.pdf";
+                      link.download = "Friday-Coed-Schedule.pdf";
                       document.body.appendChild(link);
                       link.click();
                       document.body.removeChild(link);
