@@ -8,15 +8,15 @@ const TuesdayMensStandings = () => {
   const scheduleUrl = "https://docs.google.com/document/d/1tHCF3MQefo87yojhsNTBVc0yxKHooW1PjKQ6mv0VlkU/edit?usp=sharing";
 
   const rawStandings = [
-    { team: "Piggy Pigs FC", points: 9, wins: 3, losses: 0, draws: 0, ps: 15, psa: 3, psd: 12, played: 3 },
+    { team: "Piggy Pigs FC", points: 12, wins: 4, losses: 0, draws: 0, ps: 17, psa: 4, psd: 13, played: 4 },
+    { team: "Real CF Lyons", points: 7, wins: 2, losses: 0, draws: 1, ps: 10, psa: 3, psd: 7, played: 3 },
     { team: "Big Dawgs FC", points: 7, wins: 2, losses: 0, draws: 1, ps: 9, psa: 2, psd: 7, played: 3 },
-    { team: "The Paulers", points: 6, wins: 2, losses: 1, draws: 0, ps: 10, psa: 10, psd: 0, played: 3 },
-    { team: "Real CF Lyons", points: 4, wins: 1, losses: 0, draws: 1, ps: 6, psa: 2, psd: 4, played: 2 },
-    { team: "Venator CF", points: 3, wins: 1, losses: 1, draws: 0, ps: 6, psa: 6, psd: 0, played: 2 },
-    { team: "The Collective", points: 3, wins: 1, losses: 1, draws: 0, ps: 5, psa: 7, psd: -2, played: 2 },
-    { team: "Blue Lock", points: 0, wins: 0, losses: 2, draws: 0, ps: 5, psa: 8, psd: -3, played: 2 },
-    { team: "Lions United", points: 0, wins: 0, losses: 3, draws: 0, ps: 4, psa: 12, psd: -8, played: 3 },
-    { team: "Phantom XI", points: 0, wins: 0, losses: 2, draws: 0, ps: 3, psa: 11, psd: -8, played: 2 },
+    { team: "The Collective", points: 6, wins: 2, losses: 1, draws: 0, ps: 11, psa: 7, psd: 5, played: 3 },
+    { team: "Venator CF", points: 6, wins: 2, losses: 1, draws: 0, ps: 7, psa: 6, psd: 1, played: 3 },
+    { team: "The Paulers", points: 6, wins: 2, losses: 2, draws: 0, ps: 10, psa: 16, psd: -6, played: 4 },
+    { team: "Blue Lock", points: 0, wins: 0, losses: 3, draws: 0, ps: 6, psa: 12, psd: -6, played: 3 },
+    { team: "Phantom XI", points: 0, wins: 0, losses: 3, draws: 0, ps: 3, psa: 12, psd: -9, played: 3 },
+    { team: "Lions United", points: 0, wins: 0, losses: 3, draws: 0, ps: 4, psa: 13, psd: -9, played: 3 },
   ];
 
   const standings = [...rawStandings]
