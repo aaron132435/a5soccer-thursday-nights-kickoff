@@ -16,7 +16,7 @@ const TuesdayMensStandings = () => {
     { team: "The Paulers", points: 6, wins: 2, losses: 2, draws: 0, ps: 10, psa: 16, psd: -6, played: 4 },
     { team: "Blue Lock", points: 0, wins: 0, losses: 3, draws: 0, ps: 6, psa: 12, psd: -6, played: 3 },
     { team: "Phantom XI", points: 0, wins: 0, losses: 3, draws: 0, ps: 3, psa: 12, psd: -9, played: 3 },
-    { team: "Lions United", points: 0, wins: 0, losses: 3, draws: 0, ps: 5, psa: 14, psd: -9, played: 4 },
+    { team: "Lions United", points: 0, wins: 0, losses: 4, draws: 0, ps: 5, psa: 14, psd: -9, played: 4 },
   ];
 
   const standings = [...rawStandings]
