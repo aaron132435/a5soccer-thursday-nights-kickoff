@@ -8,15 +8,15 @@ const TuesdayMensStandings = () => {
   const scheduleUrl = "https://docs.google.com/document/d/1tHCF3MQefo87yojhsNTBVc0yxKHooW1PjKQ6mv0VlkU/edit?usp=sharing";
 
   const rawStandings = [
-    { team: "Blue Lock", points: 1, wins: 0, losses: 3, draws: 1, ps: 7, psa: 13, psd: -6, played: 4 },
-    { team: "The Collective", points: 6, wins: 2, losses: 2, draws: 0, ps: 12, psa: 12, psd: 0, played: 4 },
+    { team: "Blue Lock", points: 2, wins: 0, losses: 3, draws: 2, ps: 9, psa: 15, psd: -6, played: 5 },
+    { team: "The Collective", points: 9, wins: 3, losses: 2, draws: 0, ps: 14, psa: 13, psd: 1, played: 5 },
     { team: "The Paulers", points: 6, wins: 2, losses: 3, draws: 0, ps: 11, psa: 18, psd: -7, played: 5 },
-    { team: "Piggy Pigs FC", points: 12, wins: 4, losses: 0, draws: 0, ps: 17, psa: 4, psd: 13, played: 4 },
-    { team: "Phantom XI", points: 0, wins: 0, losses: 3, draws: 0, ps: 3, psa: 12, psd: -9, played: 3 },
-    { team: "Venator CF", points: 7, wins: 2, losses: 1, draws: 1, ps: 8, psa: 7, psd: 1, played: 4 },
-    { team: "Real CF Lyons", points: 10, wins: 3, losses: 0, draws: 1, ps: 15, psa: 4, psd: 11, played: 4 },
-    { team: "Big Dawgs FC", points: 10, wins: 3, losses: 0, draws: 1, ps: 11, psa: 3, psd: 8, played: 4 },
-    { team: "Lions United", points: 0, wins: 0, losses: 4, draws: 0, ps: 5, psa: 14, psd: -9, played: 4 },
+    { team: "Piggy Pigs FC", points: 12, wins: 4, losses: 1, draws: 0, ps: 19, psa: 7, psd: 12, played: 5 },
+    { team: "Phantom XI", points: 1, wins: 0, losses: 3, draws: 1, ps: 5, psa: 14, psd: -9, played: 4 },
+    { team: "Venator CF", points: 7, wins: 2, losses: 2, draws: 1, ps: 9, psa: 9, psd: 0, played: 5 },
+    { team: "Real CF Lyons", points: 13, wins: 4, losses: 0, draws: 1, ps: 18, psa: 4, psd: 14, played: 5 },
+    { team: "Big Dawgs FC", points: 13, wins: 4, losses: 0, draws: 1, ps: 14, psa: 5, psd: 9, played: 5 },
+    { team: "Lions United", points: 0, wins: 0, losses: 5, draws: 0, ps: 5, psa: 17, psd: -12, played: 5 },
   ];
 
   const standings = [...rawStandings]
